@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gusac Carnival 4.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_events">Events</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="samplefeed">
+        <item>Sample Feed Item 1</item>
+        <item>Sample Feed Item 2</item>
+        <item>Sample Feed Item 3</item>
+        <item>Sample Feed Item 4x</item>
+    </string-array>
+    <string-array name="events">
+        <item>Pole Climbing</item>
+        <item>Pure it</item>
+        <item>Fire Extinguisher</item>
+        <item>Clash of Bot</item>
+        <item>Line Follower</item>
+        <item>Water Rocketry</item>
+        <item>Mag lev</item>
+        <item>Bob the Builder</item>
+        <item>Glow or Blow</item>
+        <item>Mousetrap race</item>
+        <item>RC Boat</item>
+        <item>Underwater Rover</item>
+        <item>Takeshi\'s Castle</item>
+        <item>War games</item>
+        <item>CAD-Event</item>
+        <item>Cosmic Crisis</item>
+        <item>Civil Structure</item>
+        <item>Bio-Luminous</item>
+        <item>SciQuiz</item>
+    </string-array>
+    <string-array name="events_main_desc">
+        <item>Here participants have to construct a rover which can climb a pole of specified dimensions and the rover has to collect the item which is placed on the top of the pole and has to deposit in a specified area by any means.</item>
+        <item>In this event, the bot designed by the participant should be capable of collecting water from a water container and purify it,displace it to a different container.</item>
+        <item>To construct a robot which is used to put off the flame (by using liquid) by using any kind of mechanism(left to the participant’s choice).\n\nOrganizers:\nV.Satya Sampath: 9494915874</item>
+        <item>The theme of the event is to construct a bot which has the immense capability to destroy the
+enemy bot in the given arena. Basically, the event tests the efficiency and the strength of the bot to sustain in the competition. Moreover, the path for the bot to reach the arena will not be a cake walk. The path will be consisting of hurdles, which the bot should be able to overcome to reach the arena.
+\n Contact:\n Adheeth Hundi : 9542689141 \n Vishnu Varma Pusapati : 8374729000</item>
+        <item>Build an autonomous bot that can follow the black line with the best efficiency it can have.
+        \n\n Contact: Aditya Viswanadha	9912266822\n
+T Sanjana Bala	9494953698\n
+C Sravya	9963560718\n       </item>
+        <item>Design and construct a water propelled rocket pressurized with air to compete against different constraints in separate rounds.
+        \n\n Contact:\n V.V. Sri Harsha: 9550235800 \n K.Lakshmi prasad: 94 91447377
+        </item>
+        <item>
+            MAGLEV – an event where in you have to design your “magnetic levitation vehicle” that stays afloat on a magnetic track. The bot can levitate either by permanent magnets, by electromagnets or by both. The participants need to make the bot to complete the given tasks in the minimum possible time. Design, build, and race a Magnetic Levitating vehicle using the principle of magnetic levitation on the track provided.
+            \n\n Contact: \n SHIVTEJA	8374424577\n
+DINESH SIGIREDDY	7842292278\n
+J.S.P TEJA	9032489523\n
+        </item>
+        <item>Participants have to design, analyse and construct two self supporting vertical structures of different heights so as to support the string of the ropeway and transfer load from higher to the lower tower.
+        \n\n Contact:\n Ram Jaya Vardhan		:+918790795451\n
+            Avinash			: +918297965378\n Prashanth			:+918520968124
+        </item>
+        <item>The theme of this event is the participant has to prepare a circuit with given set of wires to connect and glow a given no.of nonidentical bulbs without blowing them up,using least possible power as input.</item>
+        <item>Desc</item>
+        <item>The theme of this event is that the participant has to design a rover which has to pierce the paper placed on the enemy\'s bot by using any hydraulic mechanism while defending their own in a battle arena.
+        \n\nContact: U.K.Praneeth -  9652870025 \n V. Rishi Raj -  8519931222
+        </item>
+        <item>Programming and debugging game with levels. First round is a paper and pen programming round.</item>
+        <item>Linux and networking game with levels. First round is a simple level 0 questionnaire.</item>
+        <item>You are an astronomer and you are in a space ship far away from home and are out of fuel.  You need to send a message of your location across the universe to Earth to get help, but there is something wrong with your communication system. You have to repair or rebuild a circuit so that your communication system works and your message reaches earth. This is the only hope of yours for survival! Be an astronaut , save your spaceship, prove your skills in circuit debugging and circuit design !
+Debug and design a circuit based upon the given requirements. Participants will be tested on their fundamental technical concepts.
+\n\n Contact: M.SOMA SEKHAR REDDY	9959690949\n
+G.VISWANADHA REDDY	8519938383\n
+ARAVIND TELIDEVARA	8179396564
+        </item>
+        <item>You want to face a real challenge in construction? Have you ever tried to build something without any binding material as such ?Then come, show us how amazing you are at civil engineering!
+The participants’ creativity, material management and time management skills are put to a test. The participant must prepare an arch shaped structure without the help of binding agents.
+\n\n Contact: \n NAGAMALLA SAIVEDAV	9849827855\n JAGADEESH ACHANTA     9494452589
+        </item>
+        <item>The participants have to generate electricity using biological products.Participate in this event and showcase your talent in Bio-Technology!</item>
+        <item>A competition that covers various areas of science with an aim to encourage the pursuit of science among the students and to excavate their scientific mind to enrich their vision.
+        \n\n Contact:\n B.BHANU TEJA-9494332299\n
+K.VAMSHI KRISHNA-9542906406
+        </item>
+
+    </string-array>
+
+    <string-array name="events_desc">
+        <item>Construct a rover which can climb a pole</item>
+        <item>Bot designed should be capable of collecting water.</item>
+        <item>Construct a bot to extinguish fire</item>
+        <item>Construct a bot which has the capability to destroy or jump over obstacles</item>
+        <item>Construct a line follower which has to....</item>
+        <item>Participant has to construct a water rocket</item>
+        <item>Participant has to make out a contraption according to..</item>
+        <item>Participant has to construct a bot which has to displace....</item>
+        <item>Participant has to structure a design using ice-cream sticks....</item>
+        <item>Participant has to prepare a circuit with given set of wires</item>
+        <item>Participant has to make a mechanism which has....</item>
+        <item>Participant has to construct a boat which can maneuver....</item>
+        <item>Participant has to design a rover which can travel....</item>
+        <item>Construct a rover which has to tear paper</item>
+        <item>Programming and debugging game with levels</item>
+        <item>Linux and networking game with levels.</item>
+        <item>Make a design in CAD using anthropometric data</item>
+        <item>Simulation of a crisis situation faced by astronauts</item>
+        <item>Construct an ARCH structure without using any binding agent</item>
+        <item>Generate electricity from Bio Logical products.</item>
+        <item>Questions covering different aspects in science and technology.</item>
+    </string-array>
+
+
+    <string-array name="events_nontech">
+        <item>National Youth Summit</item>
+        <item>Collage Making</item>
+        <item>Itihaas</item>
+        <item>Photography Competitions</item>
+    </string-array>
+
+    <string-array name="event_desc_nontech">
+        <item>Mock Parliament:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for the the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
+        \n\nTeam Simulation:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for the the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
+            \n\n Contact:\nKaushik – 7702082892
+Srikar – 9704806565\n
+Nithila – 8978370232\n
+Kinnera – 9553564755\n
+Spandana - 9492841970       </item>
+
+        <item>The participants are divided into teams and a common topic is given to all the teams. Newspapers will be provided and the teams have to search the pictures related to the given topic, tear them with hands and  paste them on the chart.\n\n
+        Contact:\nC.V.N.SAHITHI- 8985413181\nSANJANA.B     -8790683944
+        </item>
+        <item>‘Ithihaas’ event is all about Indian mythology, Indian history and how India has been drastically changing since the ancient period.
+Indian history consists of a myriad of mythological events which has both educational and recreational value. Each and every part in it conveys us about the Indian culture and the true values of life.\n\n
+Contact:\nD.SAI.SRUTHI - 8500123996\n : Pravallika. Muppalla - 7386201096\n P.Kamala Priya - 9052771499
+        </item>
+        <item>Competitions for various photographers who are interested in showcasing their works to all.</item>
+    </string-array>
+
+
+    <string-array name="litfest">
+        <item>Story Making</item>
+        <item>Dialectic</item>
+        <item>Treasure Hunt</item>
+        <item>Think Out of The Box</item>
+        <item>Wizard\'s Chess</item>
+    </string-array>
+    <string-array name="litfest_desc_display">
+        <item>Do you have a zeal for writing? Here’s a great chance to discover the author in you. If authors like Amish Tripathi and J.K. Rowling have captivated you through their writings, this is the opportunity to captivate others through yours.  So, all the budding authors out there get ready to take all of us on a ride through your creative world.\n\n
+        The event will consist of three rounds. Each round will have a different concept. The participants will have to write their own stories according to the concept of each round.\n\n
+            Contact:\nK.S.N.Teja -9490084711\n
+Shaurya Sharma-9291504990
+ </item>
+        <item>Make new friends and get into interesting debate, bury the fear that’s trapped to your guilt and bring out the speaker within you.\n
+        A debate will be conducted in 3 rounds and the topics would be on technology, student related or public issues.
+            \n\nContact:\n Ravali .E	9908517979\n
+            B.Abhinav	7799616140\n
+            T.Prakash babu	9491484023
+        </item>
+        <item>Find the treasure that is hidden in the University. Get back your silly old memories of college life and break clues. Let’s take a rise down memory lane! Participants has to follow a set of directions and discover clues to help solve a puzzle en route.
+        \n\n Contact:\n Anand Vardhan M  - 8985277388\n
+        Anand Vardhan M     8985277388</item>
+        <item>The event "Think Out Of The Box" which has two rounds and in both the rounds participants would be tested on their creative thought process and their lateral thinking ability.\n\n
+        Contact:\n P. Likhitha - 9989734894\n
+         V.L. Reshma - 7794001832</item>
+        <item>Harness all powers of your imagination to create a really impressive , meaningful poster on the given topic. \n\n
+        Contact:\n Dona elsa regi     9032228528\n
+            G.Sushma        8297252023
+        </item>
+
+    </string-array>
+    <string-array name="litfest_desc">
+        <item>Plot a story according to situations</item>
+        <item>Debate</item>
+        <item>Treasure Hunt with a story</item>
+        <item>Entertainment Quiz</item>
+        <item>Chess with two teams of eight members</item>
+    </string-array>
+    <string-array name="filmfest_titles">
+        <item>Lights Camera GC</item>
+        <item>AD ZAP</item>
+        <item>Short Film Making</item>
+        <item>Picture Perfect</item>
+    </string-array>
+    <string-array name="filmfest_display_desc">
+        <item>We wake the director inside of you and shoot a 10 minute movie chronicling the euphoria and jubilation that is Gusac Carnival. Win not only instant fame and admiration and get to screen your video in front of a huge audience!
+        1.	It is a documentary making event.\n
+2.	Team size should be 4 or less.\n
+3.	The teams will have to come to GITAM University and shoot a documentary starting from the 1st day of GC4, encompassing the fest.
+  </item>
+        <item>A great platform to showcase the talents of wannabe advertisement gurus, Ad Zap is one of the most competitive events of GC.This is the best place to show off!\nTime limit for the video advertisement is 1 minute.\nThe one liner will have to be included as a frame of the 1 minute video ad.
+</item>
+        <item>This is your chance to prove your worth by producing a short film of your own and displaying it on a large screen of a large audience to enjoy and appreciate your brilliance.</item>
+        <item>Picture Perfect is an on spot Photography event in which you have to prove your on spot capturing skill.\n
+        A Mega Theme will be provided on the first day of GC and the photographs must be taken inside the campus and during three days of GC.\n
+        Participants are required to bring their own Cameras. No cameras will be provided by the organizers.
+        </item>
+    </string-array>
+    <string-array name="filmfest_desc">
+        <item>Shoot a 10 minute movie chronicling Gusac Carnival</item>
+        <item>Platform to showcase the talents of wannabe advertisers</item>
+        <item>Chance to prove your worth by producing a short film </item>
+        <item>Picture Perfect is an on spot Photography event</item>
+    </string-array>
+
+    <string-array name="events_nontech_desc">
+        <item>Mock Parliament and Team Simulation</item>
+        <item>Online Art Competitions</item>
+        <item>On spot Art Competitions</item>
+        <item>Platform for Co-creation.</item>
+        <item>Competition on designing posters</item>
+        <item>Competition for photographers </item>
+    </string-array>
+
+    <string-array name="pronite">
+        <item>Nukkad</item>
+        <item>Centrifuge</item>
+        <item>Wildfire</item>
+        <item>Shake A Leg</item>
+    </string-array>
+    <string-array name="pronite_display_desc">
+        <item>Nukkad nataks or street plays have been the medium of people to raise their voices of protest and social change for long. GC attempts to continue this tradition with Nukkad, the street play competition. So clear your voices, get ready for the action, drum it up, and let your message ring out loud.</item>
+        <item>An inter-collegiate dance competition. With no restrictions on genre, Centrifuge witnesses participants flaunting their dance moves in styles ranging from kathakali to contemporary.With the focus on co-ordination, choreography and technique, Centrifuge promises to be an event to test your skills like no other.
+        </item>
+        <item>Rock band competition. With the best bands from around the country, amazing prizes in cash and kind, wildfire promises to be a spectacle this year. So, get ready to headbang!!
+        </item>
+        <item>GC presents the much-awaited solo dance competition. Prove your mettle against tough competition in this unique event, with challenges from impromptu choreography to situational depictions. Can you come up tops in the event where we test everything from skill to energy to emotion? If you think you can, come forward and shake a leg.
+        </item>
+    </string-array>
+    <string-array name="pronite_desc">
+        <item>Nukkad, the street play competition</item>
+        <item>An inter-collegiate dance competition with no restrictions on genres.</item>
+        <item>Rock band competition. </item>
+        <item>GC presents the much-awaited solo dance competition</item>
+    </string-array>
+
+    <string-array name="drawables">
+        <item>@drawable/autocad</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/fireexting</item>
+        <item>@drawable/clashofbots</item>
+        <item>@drawable/linefollower</item>
+        <item>@drawable/water</item>
+        <item>@drawable/black</item>
+        <item>@drawable/bobthebuilder</item>
+        <item>@drawable/black</item>
+        <item>@drawable/black</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/takeshicastle</item>
+        <item>@drawable/wargames</item>
+        <item>@drawable/autocad</item>
+        <item>@drawable/cosmic</item>
+        <item>@drawable/civilstu</item>
+        <item>@drawable/biolumios</item>
+        <item>@drawable/black</item>
+
+    </string-array>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="action_share">Share</string>
+    <string name="days">days</string>
+    <string name="hours">hrs</string>
+    <string name="minutes">mins</string>
+    <string name="seconds">secs</string>
+    <string name="carnival_description">GUSAC Carnival - GUSAC\'s (GITAM UNIVERSITY STUDENT ACTIVITY CENTRE) Carnival :: A National Level Knowledge Symposium. Coming back, 18,19,20 March 2015!</string>
+    <string name="title_activity_event_display">EventDisplay</string>
+    <string name="about">The show has been going on since the past three years, but this time, it\'s going to be bigger and better! Get ready for three amazing days of a perfect blend of culture innovation and technology this year at the GUSAC carnival. With events across the technical and non technical spectrum, get ready to show what you are made of on the 18, 19 and 20 of this March. With bigger rewards, higher levels of innovation and newer technologies in the offering, gear up to have the time of your life this year! Make sure to mark your presence! Gusac carnival - Where enthusiasm meets talent.</string>
+    <string name="gusac_desc">GITAM University Science and Activity Centre. The GUSAC team is privileged to invite the students across the nation to participate in the various events conducted at the carnival.GUSAC provides scope for students by imparting knowledge through classes, friendly seminars, practical assignments; it also enables them to build a team for participating in fests and assists them with the required infrastructure to make their projects, besides creating a platform for the student research.</string>
+    <string name="for_more_details">For more details, visit:</string>
+    <string name="description">Description:</string>
+    <string name="event_heading">Event Heading</string>
+
+</resources>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    tools:context="carnival.gusac.com.gusaccarnival40.AboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="The Carnival"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/about" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Gusac"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gusac_desc"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Our Website:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:layout_marginBottom="20dp"
+                android:text="http://gusaccarnival.org/"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="1"
+                android:id="@+id/develop"
+                android:textSize="20sp"
+                android:text="DEVELOPED BY GUSAC WEB TEAM"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
