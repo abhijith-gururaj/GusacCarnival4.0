@@ -1,4 +1,4 @@
-package carnival.gusac.com.gusaccarnival40;
+package carnival.gusac.com.gusaccarnival40.utils;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -19,6 +19,8 @@ giving the updates after 10days of the event.
  */
 public class FeedAlarmReceiver extends BroadcastReceiver {
 
+    public static final int REQUEST_CODE = 12345;
+    static String url = "http://192.99.151.223:81/latest";
     Time endTime = new Time(Time.getCurrentTimezone());
     int hour = 01;
     int minute = 01;
@@ -26,8 +28,6 @@ public class FeedAlarmReceiver extends BroadcastReceiver {
     int monthDay = 28;
     int month = 2;
     int year = 2015;
-    public static final int REQUEST_CODE = 12345;
-    static String url = "http://192.99.151.223:81/latest";
     Context context;
 
     @Override

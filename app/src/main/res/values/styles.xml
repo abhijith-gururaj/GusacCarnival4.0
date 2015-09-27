@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -6,8 +6,8 @@
         <item name="colorPrimary">@color/myPrimaryColor</item>
         <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
         <item name="colorAccent">@color/myAccentColor</item>
-        <item name="android:textColorPrimary">#00000b</item>
-        <item name="android:textColorSecondary">@color/myTextPrimaryColor</item>
+        <!--<item name="android:textColorPrimary">#00000b</item>
+        <item name="android:textColorSecondary">@color/myTextPrimaryColor</item>-->
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
 
         <item name="android:windowBackground">@color/myWindowBackground</item>
@@ -31,6 +31,11 @@
     <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" >
         <item name="android:background">@android:color/white</item>
         <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="Custom.EditText.Style" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#919392</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

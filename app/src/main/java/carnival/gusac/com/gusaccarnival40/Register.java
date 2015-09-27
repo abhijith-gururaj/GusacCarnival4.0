@@ -22,16 +22,18 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import carnival.gusac.com.gusaccarnival40.utils.JSONParser;
+
 
 public class Register extends ActionBarActivity {
 
+    private static final String LOGIN_URL = "http://gusaccarnival.org/mobile_register.php";
+    private static final String TAG_SUCCESS = "success";
+    private static final String TAG_MESSAGE = "message";
     Toolbar toolbar;
     Button mRegister;
     ProgressDialog pDialog;
     JSONParser jsonParser;
-    private static final String LOGIN_URL = "http://gusaccarnival.org/mobile_register.php";
-    private static final String TAG_SUCCESS = "success";
-    private static final String TAG_MESSAGE = "message";
     EditText mName, mID, mCollege, mPhone, mEmail;
     String name,userid, college, phone, email;
 
@@ -97,6 +99,12 @@ public class Register extends ActionBarActivity {
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
             pDialog.show();
+            name = mName.getText().toString();
+
+            userid = mID.getText().toString();
+            college = mCollege.getText().toString();
+            email = mEmail.getText().toString();
+            phone = mPhone.getText().toString();
         }
 
         @Override
@@ -104,12 +112,7 @@ public class Register extends ActionBarActivity {
             int success;
             try {
                 // Building Parameters
-                name = mName.getText().toString();
 
-                userid = mID.getText().toString();
-                college = mCollege.getText().toString();
-                email = mEmail.getText().toString();
-                phone = mPhone.getText().toString();
 
                 jsonParser = new JSONParser();
 

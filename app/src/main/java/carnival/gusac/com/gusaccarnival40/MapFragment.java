@@ -3,10 +3,10 @@ package carnival.gusac.com.gusaccarnival40;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -25,6 +25,7 @@ public class MapFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Log.d("Map", "Loading Map");
         View rootView = inflater.inflate(R.layout.fragment_welcome, container, false);
 
         mapView = (MapView) rootView.findViewById(R.id.gc_map);
@@ -51,7 +52,7 @@ public class MapFragment extends Fragment {
 
             googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
         }
-
+        Log.d("Map", "Map successfully loaded");
         return rootView;
     }
 

@@ -7,6 +7,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
+
 
 public class SplashActivity extends ActionBarActivity {
 
@@ -16,11 +18,14 @@ public class SplashActivity extends ActionBarActivity {
         setContentView(R.layout.activity_splash);
         //Handler for sending the message on the main thread
         int SPLASH_DISPLAY_LENGTH = 3000;
+        DatabaseHandler db = new DatabaseHandler(this);
+        db.initDetails(this);
+        db.close();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(SplashActivity.this, Welcome.class);
+                Intent mainIntent = new Intent(SplashActivity.this, GetStarted.class);
                 mainIntent.putExtra("dialog", "Dialog");
                 startActivity(mainIntent);
                 finish();

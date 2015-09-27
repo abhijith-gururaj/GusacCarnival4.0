@@ -3,11 +3,14 @@ package carnival.gusac.com.gusaccarnival40;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import carnival.gusac.com.gusaccarnival40.utils.MyEventAdapter;
 
 /**
  * Created by Messi10 on 31-Jan-15.
@@ -71,11 +74,14 @@ public class EventFragment extends android.support.v4.app.Fragment implements Ad
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         //Start another activity.Put the tag and the position of the item as extras.
-        Intent event_intent = new Intent(getActivity(), EventDisplay.class);
-        event_intent.putExtra("tag", tag);
-        event_intent.putExtra("eventid", position);
-        startActivity(event_intent);
+        Intent intent = new Intent(getActivity(), EventDisplay.class);
+        EventInfo s = (EventInfo) parent.getAdapter().getItem(position);
+        Log.d("Item clicked: ", s.title);
+        intent.putExtra("tag", tag);
+        intent.putExtra("image", s.image);
+        intent.putExtra("title", s.title);
+        intent.putExtra("desc", s.description);
+        intent.putExtra("eventid", position);
+        startActivity(intent);
     }
-
-
 }

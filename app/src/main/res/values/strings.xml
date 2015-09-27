@@ -28,7 +28,7 @@
         <item>Mousetrap race</item>
         <item>RC Boat</item>
         <item>Underwater Rover</item>
-        <item>Takeshi\'s Castle</item>
+        <item>Takeshis Castle</item>
         <item>War games</item>
         <item>CAD-Event</item>
         <item>Cosmic Crisis</item>
@@ -36,7 +36,130 @@
         <item>Bio-Luminous</item>
         <item>SciQuiz</item>
     </string-array>
+
+    <string-array name="drawables">
+        <item>@drawable/biolumios</item>
+        <item>@drawable/autocad</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/fireexting</item>
+        <item>@drawable/clashofbots</item>
+        <item>@drawable/linefollower</item>
+        <item>@drawable/water</item>
+        <item>@drawable/black</item>
+        <item>@drawable/bobthebuilder</item>
+        <item>@drawable/black</item>
+        <item>@drawable/black</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/takeshicastle</item>
+        <item>@drawable/wargames</item>
+        <item>@drawable/autocad</item>
+        <item>@drawable/cosmic</item>
+        <item>@drawable/civilstu</item>
+        <item>@drawable/black</item>
+    </string-array>
+
+
+    <string-array name="rules">
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Rule 1</item>
+        <item>Organizer</item>
+        <item>Rule 1</item>
+    </string-array>
+    <string-array name="problem_statements">
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Problem Statement</item>
+        <item>Organizer</item>
+    </string-array>
+    <string-array name="criteria">
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Organizer</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+        <item>Criteria</item>
+    </string-array>
+    <string-array name="organizers">
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+    </string-array>
     <string-array name="events_main_desc">
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
         <item>Here participants have to construct a rover which can climb a pole of specified dimensions and the rover has to collect the item which is placed on the top of the pole and has to deposit in a specified area by any means.</item>
         <item>In this event, the bot designed by the participant should be capable of collecting water from a water container and purify it,displace it to a different container.</item>
         <item>To construct a robot which is used to put off the flame (by using liquid) by using any kind of mechanism(left to the participant’s choice).\n\nOrganizers:\nV.Satya Sampath: 9494915874</item>
@@ -118,8 +241,8 @@ K.VAMSHI KRISHNA-9542906406
     </string-array>
 
     <string-array name="event_desc_nontech">
-        <item>Mock Parliament:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for the the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
-        \n\nTeam Simulation:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for the the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
+        <item>Mock Parliament:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for  the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
+        \n\nTeam Simulation:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
             \n\n Contact:\nKaushik – 7702082892
 Srikar – 9704806565\n
 Nithila – 8978370232\n
@@ -166,6 +289,9 @@ Shaurya Sharma-9291504990
         Contact:\n Dona elsa regi     9032228528\n
             G.Sushma        8297252023
         </item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
 
     </string-array>
     <string-array name="litfest_desc">
@@ -180,6 +306,8 @@ Shaurya Sharma-9291504990
         <item>AD ZAP</item>
         <item>Short Film Making</item>
         <item>Picture Perfect</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
     </string-array>
     <string-array name="filmfest_display_desc">
         <item>We wake the director inside of you and shoot a 10 minute movie chronicling the euphoria and jubilation that is Gusac Carnival. Win not only instant fame and admiration and get to screen your video in front of a huge audience!
@@ -225,35 +353,38 @@ Shaurya Sharma-9291504990
         </item>
         <item>GC presents the much-awaited solo dance competition. Prove your mettle against tough competition in this unique event, with challenges from impromptu choreography to situational depictions. Can you come up tops in the event where we test everything from skill to energy to emotion? If you think you can, come forward and shake a leg.
         </item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
     </string-array>
     <string-array name="pronite_desc">
         <item>Nukkad, the street play competition</item>
         <item>An inter-collegiate dance competition with no restrictions on genres.</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
+        <item>Organizer</item>
         <item>Rock band competition. </item>
         <item>GC presents the much-awaited solo dance competition</item>
     </string-array>
 
-    <string-array name="drawables">
-        <item>@drawable/autocad</item>
-        <item>@drawable/pureit</item>
-        <item>@drawable/fireexting</item>
-        <item>@drawable/clashofbots</item>
-        <item>@drawable/linefollower</item>
-        <item>@drawable/water</item>
-        <item>@drawable/black</item>
-        <item>@drawable/bobthebuilder</item>
-        <item>@drawable/black</item>
-        <item>@drawable/black</item>
-        <item>@drawable/pureit</item>
-        <item>@drawable/pureit</item>
-        <item>@drawable/takeshicastle</item>
-        <item>@drawable/wargames</item>
-        <item>@drawable/autocad</item>
-        <item>@drawable/cosmic</item>
-        <item>@drawable/civilstu</item>
-        <item>@drawable/biolumios</item>
-        <item>@drawable/black</item>
+    <string-array name="guestLectures">
+        <item>C. S. Rao</item>
+        <item>Prathibha Sastry</item>
+        <item>Dr. Pawan Agarwal</item>
+    </string-array>
 
+    <string-array name="guestlc_shortDesc">
+        <item>Honorary Chairman, India</item>
+        <item>#Startup Evangelist #Entrepreneur #DigitalDeshLeadTravellers</item>
+        <item>#Entrepreneurship #Skills #Interests</item>
+    </string-array>
+
+    <string-array name="guestlc_longDesc">
+        <item>He is Managing Director - Intel ,India and South Asia &amp; Middle East ,WiMAX Program ,2008 Chairman, IT,TELECOM and Convergence Committee,ASSOCHAM,- a national Chamber of commerce A member of National Mfg Competitive Commission,(NMCC)He is now the chairman and CEO of QUADGEN Wireless Solutions Inc , USA BT (British telecom) India Pvt Ltd , Lucent India, PRESIDENT &amp; CEO of Tellabs India , Mg.Director, India. He was also the President of Reliance Telecommunications.A core group team of first founder 10 members at CDOT and G.M ,CDO.He received Honarary Doctorate awarded from Andhra University and Business Leadership Award , Assocham , a National Chamber of Commerce.He also received National Research Development Council (NRDC) award from President of India Innovation , Leadership &amp; Achievement Awards, Tellabs ,USA</item>
+        <item>Entertainment and entrepreneurship have been the key themes in her work life. In a career spanning over 16 years, she had launched a film magazine, hosted a film–based radio talk show, and as entertainment evolved courtesy the influx of technology, she kept pace and co–founded a mobile app based on the Indian entertainment industry.Being a seasoned entrepreneur, she enjoys working with startups used to manage an ecosystem of entrepreneurs, mentors, investors and Customers/Partners for Organisations like Microsoft Ventures,and for Pluggd.in India, in addition to promoting women entrepreneurs in India through my activities with PS Academy and other ecosystem partners.She have been the recipient of the British Council’s Young Creative Entrepreneur– India 2008–09 and have represented the country at the International Young Creative Entrepreneurs Program held in London in October, 2008</item>
+        <item>Dr Pawan Agrawal is the founder and President of Kamalabai Educational and Charitable Trust, Mumbai. An International Motivational Speaker, Author, Educationist, Business Consultant and successful Entrepreneur. He inspires and encourages people, making them realize their true potential. He delivers session on “Supply Chain Management of Mumbai Dabawala and Mumbai Paperwala”- grate story where deliverables or takeaways such as Time Management, Retention/attrition, Commitment, Leadership, Customer satisfaction, Quality, 100 %Execution, Logistics &amp; Supply chain etc can be shared. He has given several talks around India, as well as in various countries in Asia and Africa and beyond the Pacific in the United States and the United Kingdom. His 30 years of research, understanding and experience have helped people on the path of personal growth and organizational fulfillment. He has invited as Guest speaker and Key note speaker to many organizations also.</item>
     </string-array>
 
     <string name="title_activity_splash">SplashActivity</string>
@@ -270,5 +401,26 @@ Shaurya Sharma-9291504990
     <string name="for_more_details">For more details, visit:</string>
     <string name="description">Description:</string>
     <string name="event_heading">Event Heading</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="title_activity_get_started">GetStarted</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

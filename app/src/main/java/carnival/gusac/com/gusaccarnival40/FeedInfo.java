@@ -8,12 +8,12 @@ package carnival.gusac.com.gusaccarnival40;
 This is an abstraction for the feed data i.e. title,body and an associated image.
  */
 public class FeedInfo {
-    String head;
-    String body;
+    public String head;
+    public String body;
 
-    int image;
+    public int image;
 
-    FeedInfo(String head, String body, int image) {
+    public FeedInfo(String head, String body, int image) {
         this.head = head;
         this.body = body;
 

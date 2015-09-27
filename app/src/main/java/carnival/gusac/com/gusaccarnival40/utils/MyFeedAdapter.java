@@ -1,4 +1,4 @@
-package carnival.gusac.com.gusaccarnival40;
+package carnival.gusac.com.gusaccarnival40.utils;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,6 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import carnival.gusac.com.gusaccarnival40.FeedInfo;
+import carnival.gusac.com.gusaccarnival40.R;
+import carnival.gusac.com.gusaccarnival40.utils.PollingService;
 
 /**
  * Created by Messi10 on 06-Mar-15.
@@ -27,7 +31,7 @@ public class MyFeedAdapter extends BaseAdapter {
     String[] body;
 
 
-    MyFeedAdapter(Context ctx, Bundle feedData) {
+    public MyFeedAdapter(Context ctx, Bundle feedData) {
         context = ctx;
         head = feedData.getStringArray(PollingService.TAG_HEAD);
         body = feedData.getStringArray(PollingService.TAG_BODY);

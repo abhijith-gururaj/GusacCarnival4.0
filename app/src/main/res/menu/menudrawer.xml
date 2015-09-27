@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_36dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/drawer_feed"
+            android:checked="false"
+            android:icon="@drawable/ic_receipt_black_36dp"
+            android:title="Feed" />
+
+        <item
+            android:id="@+id/drawer_events"
+            android:checked="false"
+            android:icon="@drawable/ic_event_black_36dp"
+            android:title="Events" />
+
+        <item
+            android:id="@+id/drawer_cult_events"
+            android:checked="false"
+            android:icon="@drawable/ic_queue_music_black_36dp"
+            android:title="Cultural Events" />
+
+
+        <item
+            android:id="@+id/drawer_litfest"
+            android:checked="false"
+            android:icon="@drawable/ic_book_black_36dp"
+            android:title="Literary Festival" />
+
+        <item
+            android:id="@+id/drawer_filmfest"
+            android:checked="false"
+            android:icon="@drawable/ic_videocam_black_36dp"
+            android:title="Film Festival" />
+
+        <item
+            android:id="@+id/drawer_guestLectures"
+            android:checked="false"
+            android:icon="@drawable/ic_people_black_36dp"
+            android:title="Guest Lectures" />
+
+        <item
+            android:id="@+id/drawer_sponsors"
+            android:checked="false"
+            android:icon="@drawable/ic_favorite_black_36dp"
+            android:title="Sponsors" />
+
+        <item
+            android:id="@+id/drawer_about"
+            android:checked="false"
+            android:icon="@drawable/ic_info_black_36dp"
+            android:title="About Us" />
+
+    </group>
+</menu>

@@ -8,12 +8,12 @@ package carnival.gusac.com.gusaccarnival40;
 These properties are set using a custom list view adapter(MyEventAdapter).
  */
 public class EventInfo {
-    String title;
-    String description;
-    int image;
+    public String title;
+    public String description;
+    public int image;
 
     //Set the respective properties in the constructor
-    EventInfo(String title, String description, int image) {
+    public EventInfo(String title, String description, int image) {
         this.title = title;
         this.description = description;
         this.image = image;

@@ -1,4 +1,4 @@
-package carnival.gusac.com.gusaccarnival40;
+package carnival.gusac.com.gusaccarnival40.utils;
 
 import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
 
@@ -9,7 +9,7 @@ import java.net.URI;
  */
 
 /*
-Override the Apache HttpEntityEnclosingRequestBase and return the Get mothod
+Override the Apache HttpEntityEnclosingRequestBase and return the Get method
 for requesting the server.
  */
 public class HttpGetEntity extends HttpEntityEnclosingRequestBase {

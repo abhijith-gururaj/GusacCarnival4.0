@@ -1,4 +1,4 @@
-package carnival.gusac.com.gusaccarnival40;
+package carnival.gusac.com.gusaccarnival40.utils;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
@@ -15,6 +15,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import carnival.gusac.com.gusaccarnival40.R;
+import carnival.gusac.com.gusaccarnival40.Welcome;
+
 /**
  * Created by Messi10 on 06-Mar-15.
  */
@@ -26,10 +29,7 @@ This is an IntentService which is used for polling the server for fetching updat
 public class PollingService extends IntentService {
 
     public static final String PREFS_NAME = "MyServiceFile";
-    private final String TAG = "Polling Service";
-    public static Bundle latestData;
     public static final int STATUS_RUNNING = 0;
-    String intentMode;
     public static final int STATUS_FINISHED = 1;
     public static final int STATUS_ERROR = 2;
     public static final String TAG_COUNT = "count";
@@ -38,10 +38,13 @@ public class PollingService extends IntentService {
     public static final String TAG_HEAD = "head";
     public static final String TAG_BODY = "body";
     public static final String TAG_TIMESTAMP = "timestamp";
+    public static Bundle latestData;
+    public static String mPreviousPing;
+    private final String TAG = "Polling Service";
+    String intentMode;
     JSONParser jsonParser;
     String mode;
     SharedPreferences prefs;
-    public static String mPreviousPing;
 
     public PollingService() {
         super(PollingService.class.getName());

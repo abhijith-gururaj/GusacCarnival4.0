@@ -143,10 +143,11 @@
 
 <LinearLayout
     android:layout_width="wrap_content"
-    android:gravity="bottom|end"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true">
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:gravity="bottom|end">
     <com.melnykov.fab.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

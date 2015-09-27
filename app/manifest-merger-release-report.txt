@@ -132,13 +132,13 @@ ADDED from AndroidManifest.xml:60:9
 		ADDED from AndroidManifest.xml:63:13
 	android:name
 		ADDED from AndroidManifest.xml:61:13
-receiver#carnival.gusac.com.gusaccarnival40.FeedAlarmReceiver
+receiver#carnival.gusac.com.gusaccarnival40.utils.FeedAlarmReceiver
 ADDED from AndroidManifest.xml:68:9
 	android:process
 		ADDED from AndroidManifest.xml:69:13
 	android:name
 		ADDED from AndroidManifest.xml:68:19
-service#carnival.gusac.com.gusaccarnival40.PollingService
+service#carnival.gusac.com.gusaccarnival40.utils.PollingService
 ADDED from AndroidManifest.xml:72:9
 	android:exported
 		ADDED from AndroidManifest.xml:74:13

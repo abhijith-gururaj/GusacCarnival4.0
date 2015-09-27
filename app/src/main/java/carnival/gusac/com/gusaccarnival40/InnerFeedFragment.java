@@ -16,6 +16,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import carnival.gusac.com.gusaccarnival40.utils.FeedAlarmReceiver;
+import carnival.gusac.com.gusaccarnival40.utils.FeedResultReceiver;
+import carnival.gusac.com.gusaccarnival40.utils.MyFeedAdapter;
+import carnival.gusac.com.gusaccarnival40.utils.PollingService;
+
 /**
  * Created by Messi10 on 30-Jan-15.
  */
@@ -25,10 +30,9 @@ public class InnerFeedFragment extends Fragment implements AdapterView.OnItemCli
     ListView feedList;
     FeedResultReceiver mReceiver;
     SharedPreferences prefs;
-    private int position;
     String pingChecker;
     PendingIntent alarmPendingIntent;
-
+    private int position;
 
     public static InnerFeedFragment newInstance(int position) {
 
@@ -77,24 +81,19 @@ public class InnerFeedFragment extends Fragment implements AdapterView.OnItemCli
                                 break;
 
                             case PollingService.STATUS_FINISHED:
-                /* Hide progress & extract result from bundle */
-
-
                 /* Update ListView with result */
+                                String latestPing = "";
+                                SharedPreferences.Editor editor = prefs.edit();
                                 if (PollingService.latestData.isEmpty()) {
                                     feedList.setAdapter(new MyFeedAdapter(getActivity(), resultData));
-                                    String latestPing = resultData.getString("latestPing");
-                                    SharedPreferences.Editor editor = prefs.edit();
-                                    editor.putString("latestPing", latestPing);
-                                    editor.apply();
+                                    latestPing = resultData.getString("latestPing");
                                 } else {
                                     feedList.setAdapter(new MyFeedAdapter(getActivity(), PollingService.latestData));
-                                    String latestPing = PollingService.latestData.getString("latestPing");
-                                    SharedPreferences.Editor editor = prefs.edit();
-                                    editor.putString("latestPing", latestPing);
-                                    editor.apply();
+                                    latestPing = PollingService.latestData.getString("latestPing");
                                     PollingService.latestData.clear();
                                 }
+                                editor.putString("latestPing", latestPing);
+                                editor.apply();
                                 break;
 
                             case PollingService.STATUS_ERROR:
@@ -122,9 +121,7 @@ public class InnerFeedFragment extends Fragment implements AdapterView.OnItemCli
                 intent.putExtra("url", url);
                 intent.putExtra("receiver", mReceiver);
                 intent.putExtra("mode", "latest");
-
                 getActivity().startService(intent);
-
                 break;
             case 1:
 

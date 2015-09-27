@@ -4,11 +4,14 @@ package carnival.gusac.com.gusaccarnival40;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import carnival.gusac.com.gusaccarnival40.utils.MyEventAdapter;
 
 
 public class MainEventFragment extends Fragment implements AdapterView.OnItemClickListener {
@@ -36,20 +39,11 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
             case "sponsors":
                 ((Welcome) getActivity()).setActionbarTitle("Sponsors");
                 break;
-            case "celebs":
-                ((Welcome) getActivity()).setActionbarTitle("Celebrities");
-                break;
-            case "startups":
-                ((Welcome) getActivity()).setActionbarTitle("Startup Camps");
-                break;
             case "pronite":
                 ((Welcome) getActivity()).setActionbarTitle("Cultural Events");
                 break;
             case "litfest":
                 ((Welcome) getActivity()).setActionbarTitle("Literary Festival");
-                break;
-            case "expos":
-                ((Welcome) getActivity()).setActionbarTitle("Expos");
                 break;
             case "filmfest":
                 ((Welcome) getActivity()).setActionbarTitle("Film Festival");
@@ -62,7 +56,7 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
         mEventList = (ListView) rootView.findViewById(R.id.event_main_list);
         mEventList.setAdapter(new MyEventAdapter(getActivity(), type));
 
-        if(type.equals("workshops")||type.equals("filmfest")||type.equals("pronite")||type.equals("litfest"))
+        if (type.equals("workshops") || type.equals("filmfest") || type.equals("pronite") || type.equals("litfest") || type.equals("guestlc"))
         mEventList.setOnItemClickListener(this);
 
         return rootView;
@@ -73,7 +67,12 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         Intent intent=new Intent(getActivity(),EventDisplay.class);
-        intent.putExtra("tag",type);
+        intent.putExtra("tag", type);
+        EventInfo s = (EventInfo) parent.getAdapter().getItem(position);
+        Log.d("Item clicked: ", s.title);
+        intent.putExtra("image", s.image);
+        intent.putExtra("title", s.title);
+        intent.putExtra("desc", s.description);
         intent.putExtra("eventid",position);
         startActivity(intent);
     }

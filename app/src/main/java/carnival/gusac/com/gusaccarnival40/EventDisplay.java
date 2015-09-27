@@ -2,12 +2,23 @@ package carnival.gusac.com.gusaccarnival40;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.HashMap;
+
+import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
 
 /**
  * Created by Messi10 on 31-Jan-15.
@@ -22,7 +33,8 @@ public class EventDisplay extends ActionBarActivity {
     String head[]=null;
     Resources res;
     Toolbar toolbar;
-    TextView head_event;
+    TextView longDesc, rules, criteria, organizers, problemStatement;
+    TextView event_rules, event_prob, event_organizers, event_criteria;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,18 +45,61 @@ public class EventDisplay extends ActionBarActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setTitle("Description");
+        Intent i = getIntent();
+        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbarLayout.setTitle(i.getStringExtra("title"));
+        ImageView image = (ImageView) findViewById(R.id.image);
+        Drawable d = getResources().getDrawable(i.getIntExtra("image", R.drawable.cosmic));
+        image.setImageDrawable(d);
+        Bitmap bitmap = ((BitmapDrawable) image.getDrawable()).getBitmap();
+        Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
+            @Override
+            public void onGenerated(Palette palette) {
+                int primaryDark = getResources().getColor(R.color.myPrimaryDarkColor);
+                int primary = getResources().getColor(R.color.myPrimaryColor);
+                collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(primary));
+                collapsingToolbarLayout.setStatusBarScrimColor(palette.getDarkVibrantColor(primaryDark));
+            }
+        });
 
-        head_event= (TextView) findViewById(R.id.event_heading);
+        problemStatement = (TextView) findViewById(R.id.problem_statement);
         desc_event = (TextView) findViewById(R.id.desc_event);
-        tag = getIntent().getStringExtra("tag");
-        position = getIntent().getIntExtra("eventid", 0);
+        longDesc = (TextView) findViewById(R.id.long_desc_event);
+        rules = (TextView) findViewById(R.id.rules);
+        criteria = (TextView) findViewById(R.id.criteria);
+        organizers = (TextView) findViewById(R.id.organizers);
+        event_rules = (TextView) findViewById(R.id.event_rules);
+        event_prob = (TextView) findViewById(R.id.event_problemStatement);
+        event_criteria = (TextView) findViewById(R.id.event_criteria);
+        event_organizers = (TextView) findViewById(R.id.event_organizers);
+
+        tag = i.getStringExtra("tag");
+
+        if (tag.equals("guestlc")) {
+            problemStatement.setVisibility(View.GONE);
+            event_prob.setVisibility(View.GONE);
+            rules.setVisibility(View.GONE);
+            event_rules.setVisibility(View.GONE);
+            criteria.setVisibility(View.GONE);
+            event_criteria.setVisibility(View.GONE);
+            organizers.setVisibility(View.GONE);
+            event_organizers.setVisibility(View.GONE);
+        }
+        position = i.getIntExtra("eventid", 0);
+
+        HashMap<String, String> hashMap = new DatabaseHandler(this).getEventDetails(i.getStringExtra("title"));
+        desc_event.setText(hashMap.get("short_desc"));
+        problemStatement.setText(hashMap.get("problem_statement"));
+        longDesc.setText(hashMap.get("long_desc"));
+        rules.setText(hashMap.get("rules"));
+        criteria.setText(hashMap.get("criteria"));
+        organizers.setText(hashMap.get("organizers"));
 
         //Get the resources to initialize the various
         // string arrays present in strings.xml
         res = getResources();
 
-        displayDescription(tag, position);
+        //displayDescription(tag, position);
 
     }
 /*
@@ -74,12 +129,12 @@ and displays them in the textviews.
                 head=res.getStringArray(R.array.pronite);
                 desc = res.getStringArray(R.array.pronite_display_desc);
                 break;
+            case "guestlc":
+                head = res.getStringArray(R.array.guestlc_shortDesc);
+                desc = res.getStringArray(R.array.guestlc_longDesc);
         }
-        head_event.setText(head[position]);
-        desc_event.setText(desc[position]);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -90,9 +145,7 @@ and displays them in the textviews.
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         int id = item.getItemId();
-
 
         //Create a share intent
         if (id == R.id.share_event) {
