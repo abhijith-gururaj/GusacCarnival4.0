@@ -16,7 +16,8 @@ import carnival.gusac.com.gusaccarnival40.R;
 import carnival.gusac.com.gusaccarnival40.utils.PollingService;
 
 /**
- * Created by Messi10 on 06-Mar-15.
+ * Created by Abhijith Gururaj.
+ * Custom Adapter for Feed Info.
  */
 public class MyFeedAdapter extends BaseAdapter {
 
@@ -33,8 +34,8 @@ public class MyFeedAdapter extends BaseAdapter {
 
     public MyFeedAdapter(Context ctx, Bundle feedData) {
         context = ctx;
-        head = feedData.getStringArray(PollingService.TAG_HEAD);
-        body = feedData.getStringArray(PollingService.TAG_BODY);
+        head = feedData.getStringArray("messages");
+        body = feedData.getStringArray("timestamps");
 
         int img = R.drawable.gc_launcher;
         list = new ArrayList<FeedInfo>();

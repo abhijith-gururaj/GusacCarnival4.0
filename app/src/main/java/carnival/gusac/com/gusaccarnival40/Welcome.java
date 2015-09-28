@@ -69,87 +69,17 @@ public class Welcome extends AppCompatActivity
     };
     Toolbar toolbar;
     FrameLayout mFrameLayout;
-    int count = 0;
-    private NavigationView navigationView;
     private DrawerLayout drawerLayout;
     private AsyncTask<Void, Void, Void> mRegisterTask;
-    private SharedPreferences settings;
-    private ConnectionDetector cd;
     private AlertDialogManager alert = new AlertDialogManager();
-
-//    @Override
-//    public void onNavigationDrawerItemSelected(int position) {
-//        FragmentManager fm = getSupportFragmentManager();
-//        Fragment mFragment = null;
-//        Bundle args = new Bundle();
-//        String mTag = null;
-//        switch (position) {
-//            case 1:
-//
-//                mFragment = new HomeFragment();
-//                mTag = "Home";
-//                fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-//                fm.beginTransaction().replace(R.id.container, mFragment, mTag).commit();
-//                break;
-//            case 2:
-//                //Toast.makeText(this,"Inside Activity, Calling Fragment",Toast.LENGTH_SHORT).show();
-//                mFragment = new FeedFragment();
-//                mTag = "Feed";
-//                //fm.beginTransaction().replace(R.id.container,mFragment,mTag).commit();
-//                break;
-//
-//            case 5:
-//                args.putString("type", "litfest");
-//                mFragment = new MainEventFragment();
-//                mFragment.setArguments(args);
-//                mTag = "litfest";
-//                break;
-//
-//            case 6:
-//                args.putString("type", "filmfest");
-//                mFragment = new MainEventFragment();
-//                mFragment.setArguments(args);
-//                mTag = "filmfest";
-//                break;
-//
-//            case 3:
-//                mFragment = new Events();
-//                mTag = "events";
-//                break;
-//
-//
-//            case 4:
-//                args.putString("type", "pronite");
-//                mFragment = new MainEventFragment();
-//                mFragment.setArguments(args);
-//                mTag = "pronite";
-//                break;
-//            case 7:
-//                args.putString("type","about");
-//                mFragment = new AboutUs();
-//                mFragment.setArguments(args);
-//                mTag="about";
-//                break;
-//
-//            default:
-//                break;
-//        }
-//        if (mFragment != null) {
-//            if (!mTag.equals("Home")) {
-//                fm.beginTransaction().replace(R.id.container, mFragment, mTag)
-//                        .addToBackStack(mTag)
-//                        .commit();
-//            }
-//        }
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        settings = getSharedPreferences("registerPrefs", Context.MODE_PRIVATE);
-        cd = new ConnectionDetector(getApplicationContext());
+        SharedPreferences settings = getSharedPreferences("registerPrefs", Context.MODE_PRIVATE);
+        ConnectionDetector cd;
         mFrameLayout = (FrameLayout) findViewById(R.id.container);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -172,7 +102,6 @@ public class Welcome extends AppCompatActivity
             }
 
             // Getting name, email from intent
-            Intent i = getIntent();
 
             DatabaseHandler db = new DatabaseHandler(this);
             HashMap<String, String> userDetails = db.getUserDetails();
@@ -242,11 +171,7 @@ public class Welcome extends AppCompatActivity
             email = settings.getString("email", getEmail());
         }
 
-
-        //mNavigationDrawerFragment = (NavigationDrawerFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
-        //mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), toolbar);
-
-        navigationView = (NavigationView) findViewById(R.id.navigation_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
         View v = navigationView.inflateHeaderView(R.layout.navheader);
 
         TextView nametv = (TextView) v.findViewById(R.id.username);
@@ -287,13 +212,15 @@ public class Welcome extends AppCompatActivity
                         break;
 
                     case R.id.drawer_feed:
-                        Toast.makeText(getApplicationContext(), "Feed Selected", Toast.LENGTH_SHORT).show();
                         mFragment = new FeedFragment();
                         mTag = "Feed";
                         break;
 
                     case R.id.drawer_events:
-                        mFragment = new Events();
+                        args.putString("type", "events");
+                        mFragment = new MainEventFragment();
+                        mFragment = new MainEventFragment();
+                        mFragment.setArguments(args);
                         mTag = "events";
                         break;
 
@@ -433,18 +360,5 @@ public class Welcome extends AppCompatActivity
 
         }
         return possibleEmail;
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (count == 1) {
-            count = 0;
-            finish();
-        } else {
-            Toast.makeText(getApplicationContext(), "Press Back again to quit.", Toast.LENGTH_SHORT).show();
-            count++;
-        }
-
-        return;
     }
 }

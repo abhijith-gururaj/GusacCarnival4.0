@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -40,5 +39,11 @@ public class filmfest extends Fragment {
         webView.loadUrl("http://gitamstudio.com");
 
         return view;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        ((Welcome)getActivity()).getSupportActionBar().show();
     }
 }

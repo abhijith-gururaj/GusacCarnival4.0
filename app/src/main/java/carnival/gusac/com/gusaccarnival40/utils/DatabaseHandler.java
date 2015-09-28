@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Bundle;
 import android.util.Log;
 
 import java.util.HashMap;
@@ -99,6 +100,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void addCategoryEvent(String categoryName, String eventName) {
         SQLiteDatabase db = this.getWritableDatabase();
+        Log.d("GCM", "Adding Event: " + categoryName + " " + eventName);
         ContentValues contentValues = new ContentValues();
         contentValues.put(CATEGORY_NAME, categoryName);
         contentValues.put(CATEGORY_EVENT_NAME, eventName);
@@ -110,6 +112,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                                 String probStatement, String rules, String criteria,
                                 String organizers) {
         SQLiteDatabase db = this.getWritableDatabase();
+        Log.d("GCM","Adding Event: "+shortDesc+" "+eventName);
         ContentValues values = new ContentValues();
         values.put(EVENT_NAME, eventName);
         values.put(EVENT_SHORT_DESC, shortDesc);
@@ -119,6 +122,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(EVENTS_JUDGING_CRITERIA, criteria);
         values.put(EVENT_ORGANIZERS, organizers);
         db.insert(TABLE_EVENTS_DATA, null, values);
+        db.close();
+    }
+
+    public void deleteEventDetails(String eventName){
+        SQLiteDatabase db=this.getWritableDatabase();
+        String query="DELETE FROM "+TABLE_EVENTS_DATA+" WHERE "+
+                EVENT_NAME+" = "+eventName;
+
+        db.execSQL(query);
         db.close();
     }
 
@@ -244,8 +256,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String[] eventLongDescs = resources.getStringArray(R.array.events_main_desc);
         String[] litfestShortDescs = resources.getStringArray(R.array.litfest_desc);
         String[] litfestLongDescs = resources.getStringArray(R.array.litfest_desc_display);
-        String[] proniteShortDescs = resources.getStringArray(R.array.pronite_display_desc);
-        String[] proniteLongDescs = resources.getStringArray(R.array.pronite_desc);
+        String[] proniteShortDescs = resources.getStringArray(R.array.pronite_desc);
+        String[] proniteLongDescs = resources.getStringArray(R.array.pronite_display_desc);
         String[] guestlcShortDescs = resources.getStringArray(R.array.guestlc_shortDesc);
         String[] guestlcLongDescs = resources.getStringArray(R.array.guestlc_longDesc);
         String[] problemStatement = resources.getStringArray(R.array.problem_statements);
@@ -291,5 +303,36 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String[] whereArgs = new String[]{eventName};
         db.update(TABLE_EVENTS_DATA, values, where, whereArgs);
         db.close();
+    }
+
+    public Bundle getFeedUpdates(){
+
+        SQLiteDatabase db=this.getReadableDatabase();
+        Bundle args=new Bundle();
+        String query="SELECT * FROM " + TABLE_FEED_UPDATES;
+
+        Cursor cursor=db.rawQuery(query,null);
+        cursor.moveToFirst();
+
+        Log.d("Feed Count: ", String.valueOf(cursor.getCount()));
+        if(cursor.getCount()==0)
+            return null;
+
+        int counter=0;
+        String[] messages=new String[cursor.getCount()];
+        String[] timestamps=new String[cursor.getCount()];
+
+        while(!cursor.isAfterLast()){
+            messages[counter]=cursor.getString(cursor.getColumnIndex(FEED_MESSAGE));
+            timestamps[counter]=cursor.getString(cursor.getColumnIndex(FEED_TIMESTAMP));
+            Log.d("Inserted feed: ", String.valueOf(counter++));
+            cursor.moveToNext();
+        }
+        args.putStringArray("messages",messages);
+        args.putStringArray("timestamps", timestamps);
+        cursor.close();
+        db.close();
+
+        return args;
     }
 }

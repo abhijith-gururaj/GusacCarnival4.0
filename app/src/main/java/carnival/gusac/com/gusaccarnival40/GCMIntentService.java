@@ -6,9 +6,12 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-
 import com.google.android.gcm.GCMBaseIntentService;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
 import static carnival.gusac.com.gusaccarnival40.GCMUtils.SENDER_ID;
 import static carnival.gusac.com.gusaccarnival40.GCMUtils.displayMessage;
 
@@ -65,10 +68,111 @@ public class GCMIntentService extends GCMBaseIntentService {
     @Override
     protected void onMessage(Context context, Intent intent) {
         Log.i(TAG, "Received message");
-        String message = intent.getExtras().getString("price");
-        displayMessage(context, message);
-        // notifies user
-        generateNotification(context, message);
+
+        String eventCategory = "", eventName = "", problemStatement = "", rules = "",
+                organizers = "", criteria = "", shortDesc = "", longDesc = "";
+        DatabaseHandler db = new DatabaseHandler(context);
+
+        String data = intent.getExtras().getString("data");
+        Log.d(TAG, data);
+
+        String type = "";
+        try {
+            JSONObject json = new JSONObject(data);
+            String isRegistered=json.getString("isRegistered");
+            if(isRegistered!=null) {
+                Log.d(TAG,"Server registration: "+isRegistered);
+                Boolean containsPrevEvents=json.getBoolean("containsPrevEvents");
+                Boolean containsPrevFeed=json.getBoolean("containsPrevFeed");
+                Log.d(TAG,"ContainsPrevEvents: "+containsPrevEvents);
+                Log.d(TAG,"ContainsPrevFeed: "+containsPrevFeed);
+
+                if(containsPrevEvents) {
+                    JSONArray prevEvents=json.getJSONArray("prevEvents");
+                    for (int i = 0; i < prevEvents.length(); i++) {
+                        JSONObject jobj=prevEvents.getJSONObject(i);
+                        String mode=jobj.getString("mode");
+                        eventCategory = jobj.getString("event_category");
+                        eventName = jobj.getString("event_name");
+                        problemStatement = jobj.getString("problem_statement");
+                        shortDesc = jobj.getString("event_shortDesc");
+                        longDesc = jobj.getString("event_longDesc");
+                        criteria = jobj.getString("judging_criteria");
+                        rules = jobj.getString("event_rules");
+                        organizers = jobj.getString("event_organizers");
+
+                        Log.d(TAG,"Performing: "+mode+" : "+eventCategory+" : "+ eventName);
+
+                        performUpdateDB(db,mode,eventCategory,eventName,shortDesc,longDesc,
+                                problemStatement,rules,criteria,organizers);
+                    }
+                }
+
+                if(containsPrevFeed){
+                    JSONArray prevFeed=json.getJSONArray("prevFeed");
+                    for(int i=0;i < prevFeed.length();i++) {
+                        JSONObject jobj=prevFeed.getJSONObject(i);
+                        String message=jobj.getString("message");
+                        String timestamp=jobj.getString("timestamp");
+                        generateNotification(context, message);
+                        db.addFeedUpdate(message,timestamp);
+                    }
+                }
+            }
+            else {
+                type = json.getString("type");
+                Log.d(TAG, "type: " + type);
+
+                JSONObject jsonData = json.getJSONObject("0");
+
+                //String message = intent.getExtras().getString("message");
+                //Log.d(TAG, message);
+                //String[] msgs=intent.getExtras().getStringArray("data");
+                // notifies user
+
+                if (type.equals("notify")) {
+                    String message = jsonData.getString("message");
+                    String timestamp = jsonData.getString("timestamp");
+                    generateNotification(context, message);
+                    db.addFeedUpdate(message, timestamp);
+                } else {
+                    eventCategory = jsonData.getString("eventCategory");
+                    eventName = jsonData.getString("eventName");
+                    problemStatement = jsonData.getString("problemStatement");
+                    shortDesc = jsonData.getString("shortDesc");
+                    longDesc = jsonData.getString("longDesc");
+                    criteria = jsonData.getString("criteria");
+                    rules = jsonData.getString("rules");
+                    organizers = jsonData.getString("organizers");
+
+                    performUpdateDB(db,type,eventCategory,eventName,shortDesc,longDesc,
+                            problemStatement,rules,criteria,organizers);
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void performUpdateDB(DatabaseHandler db,String type,String eventCategory,String eventName,
+                                String shortDesc,String longDesc,String problemStatement,
+                                String rules,String criteria,String organizers){
+
+
+        switch (type) {
+            case "add":
+                db.addCategoryEvent(eventCategory, eventName);
+                db.addEventDetails(eventName, shortDesc, longDesc,
+                        problemStatement, rules, criteria, organizers);
+                break;
+            case "update":
+                db.updateEventData(eventName, shortDesc, longDesc,
+                        problemStatement, rules, criteria, organizers);
+                break;
+            case "delete":
+                db.deleteEventDetails(eventName);
+                break;
+        }
     }
 
     @Override

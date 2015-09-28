@@ -1,7 +1,8 @@
 package carnival.gusac.com.gusaccarnival40;
 
 /**
- * Created by Messi10 on 31-Jan-15.
+ * Created by Abhijith Gururaj.
+ * Event Info acts as encapsulation of event data to be displayed in the list.
  */
 
 /*This class provides an abstraction for an event's title,description and its image.

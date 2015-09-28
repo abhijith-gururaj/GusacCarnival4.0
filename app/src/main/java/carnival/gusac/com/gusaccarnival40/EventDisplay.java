@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -24,7 +25,7 @@ import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
  * Created by Messi10 on 31-Jan-15.
  */
 
-public class EventDisplay extends ActionBarActivity {
+public class EventDisplay extends AppCompatActivity {
 
     String tag;
     int position;

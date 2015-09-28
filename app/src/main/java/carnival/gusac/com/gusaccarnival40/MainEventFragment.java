@@ -32,7 +32,11 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
         View rootView = inflater.inflate(R.layout.fragment_main_event, container, false);
         args = getArguments();
         type = args.getString("type");
+        assert type != null;
         switch (type) {
+            case "events":
+                ((Welcome) getActivity()).setActionbarTitle("Events");
+                break;
             case "workshops":
                 ((Welcome) getActivity()).setActionbarTitle("Workshops");
                 break;
@@ -56,7 +60,7 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
         mEventList = (ListView) rootView.findViewById(R.id.event_main_list);
         mEventList.setAdapter(new MyEventAdapter(getActivity(), type));
 
-        if (type.equals("workshops") || type.equals("filmfest") || type.equals("pronite") || type.equals("litfest") || type.equals("guestlc"))
+        if (type.equals("workshops")||type.equals("events") || type.equals("filmfest") || type.equals("pronite") || type.equals("litfest") || type.equals("guestlc"))
         mEventList.setOnItemClickListener(this);
 
         return rootView;

@@ -19,7 +19,8 @@ import carnival.gusac.com.gusaccarnival40.EventInfo;
 import carnival.gusac.com.gusaccarnival40.R;
 
 /**
- * Created by Messi10 on 31-Jan-15.
+ * Created by Abhijith Gururaj.
+ * Custom Event Adapter.
  */
 
 /*
@@ -43,14 +44,14 @@ titles, descriptions and the images and inflate them so that they can be display
 public MyEventAdapter(Context context, String type) {
         this.type = type;
         String titles[] = null, desc[] = null;
-        list = new ArrayList<EventInfo>();
+        list = new ArrayList<>();
         int[] drawables = null;
         this.context = context;
     DatabaseHandler handler = new DatabaseHandler(context);
-    HashMap<String, String> hashMap = new HashMap<>();
+    HashMap<String, String> hashMap;
         Resources res = context.getResources();
         switch (type) {
-            case "event_technical":
+            case "events":
                 Log.d("Adapter", "case Technical");
                 hashMap = handler.getEventShortDesc("Events");
                 titles = new String[hashMap.size()];
@@ -66,20 +67,6 @@ public MyEventAdapter(Context context, String type) {
                     tempDrawables[i] = imgs.getResourceId(i, -1);
                 drawables = tempDrawables;
                 break;
-
-            case "event_nontech":
-                Log.d("Adapter", "Case Non Tech");
-                hashMap = handler.getEventShortDesc("Events");
-                titles = new String[4];
-                desc = new String[4];
-                for (int i = 0; i < 4; i++) {
-                    String[] strings = hashMap.get(String.valueOf(i)).split("!@#!@#");
-                    titles[i] = strings[0];
-                    desc[i] = strings[1];
-                }
-                drawables = new int[]{R.drawable.nontek, R.drawable.nontek, R.drawable.nontek, R.drawable.nontek, R.drawable.nontek, R.drawable.nontek};
-                break;
-
 
             case "pronite":
                 hashMap = handler.getEventShortDesc("Cultural Night");
@@ -158,7 +145,7 @@ public MyEventAdapter(Context context, String type) {
     //Inflate the layout
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         if (type.equals("guestlc") || type.equals("sponsors")) {
             layout = inflater.inflate(R.layout.sponsors_list_row, parent, false);

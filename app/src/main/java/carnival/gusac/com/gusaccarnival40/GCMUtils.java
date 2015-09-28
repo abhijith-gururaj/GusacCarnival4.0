@@ -6,7 +6,7 @@ import android.content.Intent;
 public class GCMUtils {
 
     // give your server registration url here
-    static final String SERVER_URL = "http://192.168.43.41/carnival_gcm_server/register.php";
+    static final String SERVER_URL = "http://192.168.0.10/carnival_gcm_server/register.php";
 
     // Google project id
     static final String SENDER_ID = "510398650672";
