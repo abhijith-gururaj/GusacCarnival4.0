@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Gusac Carnival 4.0</string>
+    <string name="app_name">Gusac Carnival 2015</string>
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
@@ -9,34 +9,33 @@
     <string name="title_activity_events">Events</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string-array name="samplefeed">
-        <item>Sample Feed Item 1</item>
-        <item>Sample Feed Item 2</item>
-        <item>Sample Feed Item 3</item>
-        <item>Sample Feed Item 4x</item>
-    </string-array>
     <string-array name="events">
-        <item>Pole Climbing</item>
-        <item>Pure it</item>
-        <item>Fire Extinguisher</item>
-        <item>Clash of Bot</item>
-        <item>Line Follower</item>
+        <item>Magnogenesis</item>
+        <item>Clash of Bots</item>
+        <item>Extreme Adventures</item>
+        <item>You the Jury</item>
+        <item>Killer Quest</item>
+        <item>Pharmascruto</item>
+        <item>60 Seconds To Fame</item>
+        <item>Counter Strike</item>
+        <item>Fifa</item>
+        <item>Steer Your Way</item>
+        <item>Jenga</item>
+        <item>Robo Run</item>
+        <item>Civil Structures</item>
+        <item>War Games</item>
+        <item>Enigma</item>
+        <item>Magnetron</item>
+        <item>Riptide</item>
+        <item>Brainiac</item>
+        <item>Treasure Hunt</item>
+        <item>Bio-Inquisitive</item>
+        <item>Plywardz</item>
         <item>Water Rocketry</item>
-        <item>Mag lev</item>
-        <item>Bob the Builder</item>
-        <item>Glow or Blow</item>
-        <item>Mousetrap race</item>
-        <item>RC Boat</item>
-        <item>Underwater Rover</item>
-        <item>Takeshis Castle</item>
-        <item>War games</item>
-        <item>CAD-Event</item>
-        <item>Cosmic Crisis</item>
-        <item>Civil Structure</item>
-        <item>Bio-Luminous</item>
-        <item>SciQuiz</item>
+        <item>Electron</item>
+        <item>Paper Presenation</item>
+        <item>Canvas Your Ideas</item>
     </string-array>
-
     <string-array name="drawables">
         <item>@drawable/biolumios</item>
         <item>@drawable/autocad</item>
@@ -58,314 +57,338 @@
         <item>@drawable/civilstu</item>
         <item>@drawable/black</item>
         <item>@drawable/black</item>
+        <item>@drawable/civilstu</item>
+        <item>@drawable/wargames</item>
+        <item>@drawable/wargames</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/autocad</item>
+        <item>@drawable/biolumios</item>
+        <item>@drawable/black</item>
+        <item>@drawable/black</item>
+        <item>@drawable/black</item>
+        <item>@drawable/black</item>
+        <item>@drawable/autocad</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/bobthebuilder</item>
+        <item>@drawable/black</item>
+        <item>@drawable/black</item>
+        <item>@drawable/autocad</item>
+        <item>@drawable/pureit</item>
+        <item>@drawable/bobthebuilder</item>
     </string-array>
-
-
     <string-array name="rules">
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Rule 1</item>
-        <item>Organizer</item>
-        <item>Rule 1</item>
+        <item>1) 15 points will be reduced each time the bot falls down.\n 2) 20 points will be reduced for each restart (if requested by the participants).\n 3) Only a maximum of 2 restarts are allowed.\n 4) Radius of ball to be shot is 2cm.\n 5) Damaging the ARENA will lead to elimination.\n\n</item>
+        <item>Teams can have a maximum of 3 members. All the members need to participate in the presentation equally.\n\n</item>
+        <item>(1) Motors with any external aid or ready-made turbines should not be used to rotate the levitating part.\n\n(2) The number of turns in the coil, radius of the coil and position of the coil should be well planned before participating in the event.\n\n(3) The magnets used should be round shaped.\n\n(4) The number of magnets should not exceed 25 (In case of magnets with smaller diameter).\n</item>
+        <item> The competition will be played on a knock-out basis consisting of 2 players (BOTS) at a time. The maximum duration for round 1 will be 5 minutes and that of round 2 will be 10 min. Any team that is not ready at the time specified will be disqualified from the competition. The machine would be checked for its safety before the competition and would be discarded if found unsafe for other participants and spectators. Judges\' decision shall be treated as final and the organizers reserve the rights to change any or all of the above rules as they deem fit. Violation of any the above rules will lead to disqualification. Change in rules(if any), will be highlighted on the website and notified to the registered teams. \n\nSafety Rules:\n\n 1. Compliance with all event rules is mandatory. It is expected that competitors stay within the rules and procedures of their own accord and do not require constant policing.\n\n 2. If you have a robot or weapon design that does not fit within the categories set forth in these rules or is in some way ambiguous or borderline, please contact the event organizers.\n\n 3. All weapons must have a safety cover on any sharp edges</item>
+        <item>A maximum number of participants allowed per team: 4 people. All arena dimensions have a tolerance of 10%%. Teams qualifying the first round will go into the second round. Teams cannot touch their bots during the course of the run, unless timeout is taken. LEGO kits or its spare parts or pre-made mechanical parts are not allowed. The team members can be from different institutes or colleges. Each team should have unique participants i.e. no two teams can have common participants.The decision of the Team Extreme Adventures will be final.</item>
+        <item>Each team consisting min of 3 and max of 6. A case is given to each team for analysis. Time limit for analysis: 15min. \n\nTime limit for argumentation: 5-10min. Judgment to be given by concerned faculty</item>
+        <item>Each team consisting min of 5 max of 8. A video clip of a crime scene along with statements diposed by accused. The teams after keen observation need to unravel the mystery. Explore and crack the quest. Written based analysis</item>
+        <item>The participants must finish the task in the given time. The participants must abide by the rules. The organizing committee reserves the right to change the venue, time and rules if desired.Any type of damage to the institute property in any form is not tolerable and strict disciplinary action will be initiated against the defaulter(s) as per the rules of the institute.</item>
+        <item>The performer or a group have to get up onstage and do absolutely anything that the crowd and the judges would like to see in the 60 seconds allotted. The range of performances vary from singing, dancing, mono acting, skits, juggling, playing the guitars, gymnastics, reciting poems, telling jokes, Harlem Shake,etc. The only boundry is your imagination. Participants can bring their own props. Decision of the organizers is final and irrevokable.</item>
+        <item>1. Maps: de_dust2, de_inferno, de_nuke, de_train.\n\n2. Cs 1.6 version will be used.\n\n3. No player is allowed to use any console command. This will result in disqualification. Cheating of any sort will also reap similar consequences. \n\n4. The ingame final verdict given by the game engine will be used as final result.\n\n5. In case of any ambiguity the verdict of organizer is final.</item>
+        <item>NO controllers allowed. Any player found using cheats will be disqualified. Organizers decision is final in case of any dispute.</item>
+        <item>Refer Gameplay and Rounds</item>
+        <item>This is an individual event. The decision of the organizers is final.</item>
+        <item>A Team can consist of a maximum of 4 participants. The bot’s maximum dimensions should not exceed 25x25x25cm.\n\n Only 1 member of the team is allowed to handle the bot in the arena. Participants are not allowed to keep anything inside the arena other than the bot.\n\n The time clocked by the organizers will be final and will be taken as criteria to evaluate the teams.\n\n In case of any disputes / discrepancies, the organizer’s decision will be final and binding.\n\n The organizers reserve the rights to change any or all of the above rules as they deem fit.\n\n Change of rules, if any, will be highlighted on the website and notified to the teams concerned.</item>
+        <item>A maximum of 3 members are allowed per team. \n\nCement or any binding materials can\'t be used. Teams will not be allowed to use broken brick, only full size brick can be used.\n\n If any structure does not stand on its supports then it will be out of the race.</item>
+        <item>Lone rangers or Duets only. BYOD for the 2nd round if you want to. Few challenges may require you to do it. Get a laptop with a live cd of kali linux and spare yourselves the pain of installing tools during the event (time is precious, waste it wisely). Additional rules will be informed once you reach round 2.</item>
+        <item>Lone rangers only. BYOD for the 2nd round if you want to. Not necessary but we at shield understand some people like programming on their own laptops Additional rules will be informed once you reach round 2.</item>
+        <item>A team should consists of 2 to 4 participants.</item>
+        <item>The teams should contain a maximum of FOUR participants and a minimum of THREE.\n\n Only one member of the team is allowed to control the boat.\n\n The teams will be given ONE chance as trail before the completion starts.\n\n The teams should design their boats based on the dimensions of the arena for different rounds specified. The organisers will not be responsible of any misconceptions.</item>
+        <item>1). The team should consists of no more than 2 participants.\n\n 2). The maximum duration for each emoji interpretation which will be displayed on screen.</item>
+        <item>Rules</item>
+        <item>1. This event consists of 3 rounds.\n\n 2. Each team consists of 2 members.\n\n 3. The top 10 teams progress to 2nd round.\n\n 4. Three teams compete for glory in final.\n\n 5. No electronic gadgets are allowed.</item>
+        <item>1. A team should consist of 2 participants and are not allowed to bring their mobiles. 2. Their justifications should end within 6 to 8 lines. 3. Each team should complete round 2 in 8mins.</item>
+        <item>A team may consist of a maximum of 3 members. Teams may use different rockets for different rounds. Cross college teams are also allowed. The rocket must use tap water as its primary reaction mass. Participants will be provided with tap water. Launch pressure: 75 psi and Launch angle: participants decision. The angle at which the rocket is to be launched can be decided by the participant. The organizers will not provide a launcher, so teams must bring their own launchers. The rocket must use compressed air as its energy source. A normal bicycle pump as well as a foot pump will be provided to compress the air. The size of the pump outlet will be the standard type available in the market. If your design has a different nozzle size, please be sure to bring your own nozzle and connecting pipe. All parts of the rockets should be properly attached to the main body. If any part (fins etc.) breaks away during flight, it will compromise the safety of the spectators. Therefore, such water rockets may be disqualified from further participation at the discretion of the organizers. The organizers will not be responsible for damage suffered by rockets during the competition.</item>
+        <item>All circuits must be synthesized only by using the components provided (Physically or on paper).\n\n All components should be handled with care and any loss or damage will lead to a penalty.\n\n No form of electronic media or printed media may be used as aid during the competition and if found so, the entire team will be disqualified.</item>
+        <item>Rules will remain stated by the Team Co-ordinators of this respective Event.</item>
+        <item>Each team can consist of a Maximum of 2 members. Duration: 2 hours per team, Size of Poster: A3, Manual work only is permissible.Draw, Sketch, Paint, Write… Get your own colours and stationery.\n\n Use of any medium of colors is allowed.\n\n Only Paper will be provided on spot.</item>
     </string-array>
     <string-array name="problem_statements">
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Problem Statement</item>
-        <item>Organizer</item>
+        <item>Participants must prepare a bot (wired or wireless) which must be capable of moving on a metal rod and shooting an ordinary ping pong ball aiming the bull\'s eye. The event consists of 3 rounds\n\n</item>
+        <item>The team should submit an abstract on the given topic or as guided by the Event Co-ordinators\n\n</item>
+        <item>1. In our event the participants should make a device which isbalanced in air by using the concept of magnetic levitation. \n\n* 2. The device should be made in such a way that the magnetic levitation can be used to create a continuous rotatory motion to thefloating part.\n\n 3. The change in flux during the rotatory motion is used to produce voltage in a copper coil which serves as the judging criteria**. 4. We will check the voltage produced at the ends of the coil using a DMM (Digital Multi Meter).\n\n *The procedure to make a magnetic levitation device is given in the following link https://www.youtube.com/watch?v=FM0c0GL9ha0 \n\n** The voltage produced can be measured using a Digital Multi-meter.\n https://www.facebook.com/ncharan.sai/videos/o.426744474134669/425534517589202/?type=2&amp;theater</item>
+        <item>The theme of the event is to construct a bot which has the immense capability to destroy the enemy bot in the arena. Basically, the event tests the efficiency and the strength of the bot to sustain in the competition. Moreover, the path for the bot to reach the arena will not be a cake walk. The path will consist of hurdles, which the bot should be able to overcome to reach the arena.\n</item>
+        <item>Build a bot that is capable of traversing a grid and passing through different stages.</item>
+        <item>Leave aside the proper legal aspects for and instance in view of a change in the existing scenario.</item>
+        <item>Analyze the given crime scene, solve the case and present a report.</item>
+        <item>Read the Description Again</item>
+        <item>Participants should pull the crowd and judges and impress them.</item>
+        <item>Statement</item>
+        <item>FIFA gaming</item>
+        <item>There will be 5 to 10 checkpoints depending on the length of the track. Each checkpoint carries 10 points. Selection is done based on the points and timing.</item>
+        <item>Blocks are arranged in tower form. Participants should remove each one block from the tower and place in top of tower such that structure should not fall.</item>
+        <item>DIGITALISING INDIA: This robots can be used to serve patients in hospitals where there is need of manpower. Can be used in multi-star hotels for guiding customers to their respective rooms.</item>
+        <item>The participants need to construct an arch with supports using bricks and sand. The arch constructed should be capable of bearing the weights that will be placed on it.\n\n</item>
+        <item>Each level gives you the password to the next. Play! Faster you complete, more points you get. Each level is different, fun and challenging.</item>
+        <item>The enemy forces of thanos have trivial enigma machines that must be broken. You comorade, are one of the candidates selected to help mr.stark do it.</item>
+        <item>In this event the participants should make a rover which consists of an arm (which has a electromagnet) that should be capable of lifting small metallic pieces like nails and pins which are placed on ground.</item>
+        <item>The participants are given a particular task in each round. They are to carry out the task in the most simplest, yet efficient manner. The difficulty level of the task increases as they advance into the next rounds.</item>
+        <item>Same as Described above.</item>
+        <item>Hunt for a particular treasure.</item>
+        <item>As today’s world is dependent on science and technology,we as budding engineers of India must know the basic scientific theories so as to improve the present day technologies to a higher level thus developing India to a “scientific India.”</item>
+        <item>DIGITAL INDIA is a programme to prepare India for a knowledgable future. The focus is on making technology central to enabling change. It weaves together a large number of ideas and thoughts into a single, comprehensive vision so that each of them is seen as part of a larger goal. It mainly centered on 3 key areas: Digital Infrastructure as a utility to every citizen. Governance and services on demand. Digital empowerment of citizens.</item>
+        <item>Design and construct a water propelled rocket pressurized with air to compete against different constraints in separate rounds.</item>
+        <item>Clear the tasks assigned in each round and present the required outputs of your circuits to advance to the next level.</item>
+        <item>Same as described above</item>
+        <item>Design a poster for endorsing a given product/brand. Make it Speak, as words speak louder than actions. Use your creative ideas to spontaneously grab the attention of the mass.</item>
     </string-array>
     <string-array name="criteria">
+        <item>30 Points will be awarded for crossing the threshold point. End point of the bot must cross the threshold point to get all the 30points. Points for shooting the ping pong ball at the bull’s eye depends upon the point at which the ball is shot at target sheet as mentioned in the diagram.\n\n</item>
+        <item>The abstract will be shortlisted purely on the basis of feasibility of the solutions and the extent of impact on the society. The decisions made by the judges will be final and irrevokable. In case of a clash between two ideas, public opinion will be considered.\n\n</item>
+        <item>In the first round filtering the participants is done on the basis of the DC and AC voltages produced at the output ends of the coil.\n\nIn the second round the judgement is done based on the distance travelled by the rover. Top 20% of the round-1 will be qualified to round-2. \n\nAnd in the second round the device which makes the rover cover large distance is given as the winner.</item>
+        <item>1) A robot is declared victorious if its opponent is immobilized.\n\n 2) A robot will be declared immobile if it cannot display linear motion of at least one inch in a timed period of 20 seconds. A bot with one side of its drive train disabled will not be counted out if it can demonstrate some degree of controlled movement.\n\n 3). If both robots survive the three minutes, the robot with the higher hit points wins.\n\n 4.) The winner moves on and the loser is eliminated from the tournament.\n</item>
+        <item>POSITIVES: Initial base score for Round 1 and Round 2 : 1200 points, For each correctly passed stage : +100, For every difficulty path choosen :+150. \n\nNEGATIVES: For each time the bot is arranged manually : -20, For every time the bot is dropped down: -50, Restart : -80 points</item>
+        <item>Presentation and confidence - 20 marks. Appropriate content (relevancy)- 30 marks. Ideology based argumentation - 40 marks. Overall impression of the panel of judges - 10 marks</item>
+        <item>Logical reasoning (35m). Creativeness and writing style (20m). Research in the given problem (10m). Match with the jury\'s answer (35marks)</item>
+        <item>Participants will be tested on the basis of their practical and theoretical knowledge in pharmaceutical sciences. Decision of the judges will be final and binding.</item>
+        <item>Rules.</item>
+        <item>Rules.</item>
+        <item>The Player with most number of goals wins.\n\nIf the match ends in a draw then the team whose player is declared as the man of the match wins.</item>
+        <item>Refer Gameplay and Rounds</item>
+        <item>a) Points will be awarded on basis of blocks taken.\n\n b) Each participant will get points and those will be noted.\n\n c) This process is followed until the tower collapses.\n\n d) The one who gets more points among all the participants will be awarded as the winner.</item>
+        <item>Please refer each round again since the criteria is specific to each round</item>
+        <item>The team which constructs the arch that bears the maximum load put on it will be considered as winner.</item>
+        <item>Please refer the rounds again, in order to understand the Judging criteria</item>
+        <item>Please refer the rounds again, in order to understand the Judging criteria</item>
+        <item>1) In the first round basic functioning of the participant\'s rover will be tested i.e. whether it is capable of lifting metallic pieces placed randomly placed on ground, and drop them at specified location after carrying through the given path.\n\n 2) In the second round time taken by the rover to complete the task is considered.\n\n 3) In the third round all the selected teams will participate at a time. Participants who collects the most is considered as the winners, score will be awarded accordingly.</item>
+        <item>Carefully read the rules again in order to be clear</item>
+        <item>Please look at the rounds in order to understand more.</item>
         <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Organizer</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
-        <item>Criteria</item>
+        <item>1. Every round consists of some peculiar questions which will be given more preference.\n\n 2. The best related answer will be considered.</item>
+        <item>Marks will be awarded based on their justifications for their perceptive views and bonus points awarded for answering the Brainstorms.\n\n The teams which get more than the cut off mark will be allowed to participate in round\n\n 2. Participants will be allotted marks based on their innovative ideas and the way they express their view towards advertising it at that instant and teams with the highest scores will move to the next round. In the last round, the team which presents their ideas in considerable manner will be declared as winners.</item>
+        <item>The final judgement is based on the total points scored by the participated team in all the three rounds described above. The total points scored in all the three rounds are added up and awarded as their final score. Organizer’s decision will be final.</item>
+        <item>The simplest circuit with the required output is always given higher priority. Teams will also be judged based on how fast they are able to synthesize their circuits.</item>
+        <item>Judging will be made final by the team.</item>
+        <item>On Creativity, On Being Different, On Simplicity, On Being Ethical, On being able to grab attention &amp;  endorse the product/brand.</item>
     </string-array>
     <string-array name="organizers">
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
+        <item>Gowtham Srinivas (9542945129, penjarlagowtham@gmail.com), Sarath Chandra (9704967303, krishnasarathchandra@gmail.com)</item>
+        <item>Sravya (9963560718), Keerthi Kaushal (9177575776)</item>
+        <item>Aravinda Karthik (8106828753, karthik.ark4@gmail.com), Radha Rani (9553311770, radharani.b1996@gmail.com), K. Sai Chandra (8121230396, saichandra62@gmail.com)</item>
+        <item>Rakesh Inty (9848236975, rakeshinty@yahoo.com), Vishnu Varma Pusapati (8374729000,vishnuvarma5427@gmail.com)</item>
+        <item>B.MUKESH CHOWDARY- (9441347770, e-mail id: mukesh.boginani94@gmail.com, Fb id: mukesh944), V. SAI YESHWANTH- (8374474447, e-mail id: 95yeshu@gmail.com, Fb id: yeshwanthsaivankayala)</item>
+        <item>V Saishree (8008299242​​​), B. Bhavya (9703311269)</item>
+        <item>V Saishree (8008299242​​​), B. Bhavya (9703311269)</item>
+        <item>Namrata Ch (8374021602, namrata.ch94@gmail.com), Akshay B (8143888587)</item>
+        <item>Shahrukh shaik-8978633867,e-mail id: shahrukhshaik25@gmail.com, Fb id: Shahrukh Zaved</item>
+        <item>Kamal Ahmed Email: ahmedkamal826@gmail.com Ph: 8297040162. Manish Kumar Email: mnishdeman@gmail.com Ph: 7674056099.</item>
+        <item>Ashish kumar (8297413821, Kumar.ashish583@gmail.com), Amarnadh Matsa (9652825454, m.amarnadh@gmail.com)</item>
+        <item>Mehar Narayanam (9642968977), Parna Bose</item>
+        <item>SAI DINESH (9618943450, dineshbillakurti03@gmail.com), KVK PRASAD (9908589369, Kvkprasad007@gmail.com)</item>
+        <item>V.ABHISHEK (9640628428), BHARGAV VAMSI (8885690718)</item>
+        <item>Organizers</item>
+        <item>Om Bhallamudi (+91–9573663478, om.bhallamudi@gmail.com)</item>
+        <item>Om Bhallamudi (+91–9573663478, om.bhallamudi@gmail.com)</item>
+        <item>G. Tharun Kumar (9618410510, tharunkumarguntupu@gmail.com), L. Mahesh (9866209025, maheshlekkala043@gmail.com)</item>
+        <item>Akash Benny (email :akashbenny161@gmail.com ; mob: 8121713148), Bhargav Vamsi (email : pbv.easwar@gmail.com; mob: 8885690718), Eswar sai (email: eswarsaib96@gmail.com ; mob:8790756499)</item>
+        <item>B. Poorna Chandra Reddy (7702277065, e.mail id:poorna.beeram@gmail.com), B. Mounika (9849036716, e.mai id:mounikacool284@gmail.com)</item>
+        <item>Organizers</item>
+        <item>B.BHANU TEJA (9494332299), K.VAMSHI KRISHNA (9542906406)</item>
+        <item>D.A.V.Sriram (Sriramdeva2207@gmail.com, Mob No: 8886195136), S.M.Greeshma (greeshmasalvakam96@gmail.com, Mob No: 7659033256)</item>
+        <item>T.Abhishek (8179795562, abhithadi@gmail.com), I.V.P.Ambareesh (9491267957, pavanambareesh1995@gmail.com</item>
+        <item>Kishan (9494394615, kishansureddi@gmail.com), Mounika (7674992375, monikablackberry@gmail.com)</item>
+        <item>P.PALLAVI (8332936538), K.PRANAVI (9177472515)</item>
+        <item>Pragya (8142622506, pragyaverma15@gmail.com), Upama Sen (8886373676, senupama@gmail.com)</item>
     </string-array>
-    <string-array name="events_main_desc">
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Here participants have to construct a rover which can climb a pole of specified dimensions and the rover has to collect the item which is placed on the top of the pole and has to deposit in a specified area by any means.</item>
-        <item>In this event, the bot designed by the participant should be capable of collecting water from a water container and purify it,displace it to a different container.</item>
-        <item>To construct a robot which is used to put off the flame (by using liquid) by using any kind of mechanism(left to the participant’s choice).\n\nOrganizers:\nV.Satya Sampath: 9494915874</item>
-        <item>The theme of the event is to construct a bot which has the immense capability to destroy the
-enemy bot in the given arena. Basically, the event tests the efficiency and the strength of the bot to sustain in the competition. Moreover, the path for the bot to reach the arena will not be a cake walk. The path will be consisting of hurdles, which the bot should be able to overcome to reach the arena.
-\n Contact:\n Adheeth Hundi : 9542689141 \n Vishnu Varma Pusapati : 8374729000</item>
-        <item>Build an autonomous bot that can follow the black line with the best efficiency it can have.
-        \n\n Contact: Aditya Viswanadha	9912266822\n
-T Sanjana Bala	9494953698\n
-C Sravya	9963560718\n       </item>
-        <item>Design and construct a water propelled rocket pressurized with air to compete against different constraints in separate rounds.
-        \n\n Contact:\n V.V. Sri Harsha: 9550235800 \n K.Lakshmi prasad: 94 91447377
-        </item>
-        <item>
-            MAGLEV – an event where in you have to design your “magnetic levitation vehicle” that stays afloat on a magnetic track. The bot can levitate either by permanent magnets, by electromagnets or by both. The participants need to make the bot to complete the given tasks in the minimum possible time. Design, build, and race a Magnetic Levitating vehicle using the principle of magnetic levitation on the track provided.
-            \n\n Contact: \n SHIVTEJA	8374424577\n
-DINESH SIGIREDDY	7842292278\n
-J.S.P TEJA	9032489523\n
-        </item>
-        <item>Participants have to design, analyse and construct two self supporting vertical structures of different heights so as to support the string of the ropeway and transfer load from higher to the lower tower.
-        \n\n Contact:\n Ram Jaya Vardhan		:+918790795451\n
-            Avinash			: +918297965378\n Prashanth			:+918520968124
-        </item>
-        <item>The theme of this event is the participant has to prepare a circuit with given set of wires to connect and glow a given no.of nonidentical bulbs without blowing them up,using least possible power as input.</item>
-        <item>Desc</item>
-        <item>The theme of this event is that the participant has to design a rover which has to pierce the paper placed on the enemy\'s bot by using any hydraulic mechanism while defending their own in a battle arena.
-        \n\nContact: U.K.Praneeth -  9652870025 \n V. Rishi Raj -  8519931222
-        </item>
-        <item>Programming and debugging game with levels. First round is a paper and pen programming round.</item>
-        <item>Linux and networking game with levels. First round is a simple level 0 questionnaire.</item>
-        <item>You are an astronomer and you are in a space ship far away from home and are out of fuel.  You need to send a message of your location across the universe to Earth to get help, but there is something wrong with your communication system. You have to repair or rebuild a circuit so that your communication system works and your message reaches earth. This is the only hope of yours for survival! Be an astronaut , save your spaceship, prove your skills in circuit debugging and circuit design !
-Debug and design a circuit based upon the given requirements. Participants will be tested on their fundamental technical concepts.
-\n\n Contact: M.SOMA SEKHAR REDDY	9959690949\n
-G.VISWANADHA REDDY	8519938383\n
-ARAVIND TELIDEVARA	8179396564
-        </item>
-        <item>You want to face a real challenge in construction? Have you ever tried to build something without any binding material as such ?Then come, show us how amazing you are at civil engineering!
-The participants’ creativity, material management and time management skills are put to a test. The participant must prepare an arch shaped structure without the help of binding agents.
-\n\n Contact: \n NAGAMALLA SAIVEDAV	9849827855\n JAGADEESH ACHANTA     9494452589
-        </item>
-        <item>The participants have to generate electricity using biological products.Participate in this event and showcase your talent in Bio-Technology!</item>
-        <item>A competition that covers various areas of science with an aim to encourage the pursuit of science among the students and to excavate their scientific mind to enrich their vision.
-        \n\n Contact:\n B.BHANU TEJA-9494332299\n
-K.VAMSHI KRISHNA-9542906406
-        </item>
 
+    <string-array name="events_main_desc">
+        <item>ARQUERIA!!!!!! Are u ready for Spanish archery? Not like other archeries,let’s be technical and automotive. We would like a BOT to aim the target.Its purpose is to have an unmanned hunting source at wilder times.\n\nThe distance between the two vertical rods is 2 meters. The rod is of 2 inch in diameter. Distance between rod and the ground is 1 meter. Distance between rod and the center of bulls eye is 0.25 meter.(in y direction). Distance between the bulls eye and the horizontal rod in z direction is 1 meter. Bot must be less than 30cm in length, breadth and height.\n\n</item>
+        <item>Imagine your life without facebook, YouTube or Google. Hard isn’t it? The harder truth is out of 1.28 billion people in India, only 243 million people have access to internet which is less than 20%% of the total population.\n\nRound 1: In this round, the participants are given a list of topics and asked to select a topic. They will have to submit an abstract on the selected topic. The list of topics will be disclosed two weeks prior to the date of the event. The abstracts are to be submitted online. The shortlisted candidates shall proceed to the next round held during the carnival.\n Round 2: The shortlisted candidates need to come with a detailed version of their abstract which will be scrutinized by the judging panel. They need to take public opinion to support their idea and state a conclusion which aptly suits the situation.\nRound 3: Selected candidates need to give a presentation on their solution.\n\n</item>
+        <item>Magnetic levitation, maglev or magnetic method by which an object is suspended with no support other than magnetic fields. Magnetic force is used to counteract the effects of the gravitational and any other accelerations.\n\n(1) A basic magnetic levitation device should be made and brought by the participants.\n(2) The magnets used can be of any material.</item>
+        <item>The theme of the event is to construct a bot which has the immense capability to destroy the enemy bot in the given arena.\n\n\n Dimensions and Fabrications: The bot should fit in a box of dimension 40cm x 40 cm x 40 cm (lxbxh) with all mechanisms fully executing motions. \n\nLength and width is measured to the extremities of the Robot, i.e. includes any overhanging bodywork, weaponry or protrusions. The external device used to control the bot is not included in the size constraint. Mobility: All bots must have easily visible and controlled mobility in order to compete. Methods of mobility include: Rolling (wheels, tracks or the whole robot). Jumping and hopping is not allowed.\n\n Flying (using air foil, helium balloons, ornithopters, etc.) is not allowed.\n\n\n Robot Control Requirements: If the bot is wired then the wire should remain slack under all circumstances during the competition. \n\nAll the wires coming out of the bot should be stacked as a single unit. The wires should be properly insulated.</item>
+        <item>Build a bot that is capable of traversing a grid and passing through different stages.The bot has to traverse a grid and should be able to pass through different stages placed randomly.\n\nThe bot must fit in a box of 25cm X 20cm with a tolerance of 10%% in the dimensions of bot. No part/mechanism of/on the bot should exceed the given dimensions before the commencement of the event. However the dimensions can change during the course of the run. \n\nThe bots should not harm the event arena in any way. If it does so, a penalty will be imposed on the team. Bot can be either wired or wireless. Power supply for the bot will not be provided.</item>
+        <item>Its Judgment time. Put your legal knowledge and analytical skills to test and deliver justice to your clients. Solve the given case within the stipulated time and present your arguments to justify your points.\n\n</item>
+        <item>Step into the shoes of a private detective and solve puzzling cases Hunt down clues and catch the quest Hone your detective skills..!!!\n\n</item>
+        <item>Gear up for one of the most awaited and brain storming events of GUSAC Carnival V.4.0. Get ready to tickle your nerves and dive into your world of pharmacy.\n</item>
+        <item>To change from what you are to what you want to become, all you need is 60 seconds !!</item>
+        <item>Get ready to wake the gamer in you! Prove your combat skills head on in Counter Strike.Cs 1.6 is a first person shooter competitive PC game.\n\nEach team has5 members. Both teams use their skills to secure the objective.</item>
+        <item>Are you a football freak???.....Are you good at it???......Then it’s time to showcase your FIFA skills on a head on match.\n\nThere is no need to bring any sort of equipment, everything will be provided.</item>
+        <item>The game is based on the game of steady hands. There will be a specially equipped rover provided and the participant is supposed to guide the rover along the length of the wire without touching the ring attached to the rover.\n\nROUND 1: The top “N” contestants will move to next round. Each pardon costs 5 points. 5 pardons given. There will be 10-15 participants allowed in the second round.\n\n ROUND 2: Each pardon costs 10 points. 3 pardons given. The participants with top points will be declared to next round.There will be 3-5 participants allowed in the third round.\n\n ROUND 3: One pardon given. Third round is the final round.</item>
+        <item>Blocks are arranged in tower form. Participants should remove each one block from the tower and place in top of tower such that structure should not fall.\n\n</item>
+        <item>An autonomous robot starting from the point marked on arena should reach the end point tracing the path.\n\n</item>
+        <item>The participants need to construct an arch with supports using bricks and sand only instead of using concrete and steel. The arch constructed should be capable of bearing the weights that will be placed on it. A team of 3 participants will be allowed to peform the event.\n\n The participating team needs to construct an arch using bricks and sand with supports at both ends.\n\n After constructing the arch, the iron stand is removed slowly such that the constructed arch is balanced on its supports. Weights are placed on the arch one after the other. The arch should be capable of bearing those weights.</item>
+        <item>Did you watch die hard 4, wargames or the matrix because you couldn\'t get enough? Does mr. robot keep you awake all night? Do you look in the source code for clues? This event is for you! All you have to do is play the games to win.\n\n Round 1: Pen and paper round to advance to round 2. Every hacker has to know his lore, his origins and his commands! Easy questions carry lesser marks than hard questions. \n\n Round 2: The second round is nothing like the first. Let the games begin. You compete against others who have been deemed worthy of this round. One with the highest points wins!</item>
+        <item>An Enigma machine was a series of electro-mechanical rotor cipher machines developed and used in the early to early-mid twentieth century for commercial and military usage.\n\nRound 1: Pen and paper round to advance to round 2. Yes, I have selected you, but you have to pass the test set by JARVIS.\n\n Round 2: Programming! Mr. Stark is busy with the civil war. Can you write some code for him?</item>
+        <item>Magnetron is based on the principle of electromagnetism. A rover(bot) is attached with an electromagnet to its arm which should be capable of displacing any kind of small ferric substances (pins, nails, screws) from the given place to the destination with the help of magnetising and demagnetising the electromagnet as per the requirement.\n\n1) Rover should contain an electromagnet to its arm.\n\n 2) Arm of the rover should be movable.\n\n 3)Rover designed must be capable of lifting the metallic pieces (nails, screws, pins) which are placed on ground as well as carry them and drop them in the specified location.\n\n 4) Rover max dimensions: 30x30cms including tyres.</item>
+        <item>This is an innovative idea to modernise the conventional way of transportation i.e boats. This event involves all the basic mechanisms and operations of motors and analysing the racing path in the water medium. The accuracy in controlling the boat and efficiency in decoding the path to reach the fastest unfolds the key to win. The profound nature of beating others down in actions brings up the true spirit of this completion.\n\n ROUND 1 :ELIMINATION ROUND, TASK : To complete a lap in minimum time. DESCRIPTION : This is an elimination round where the boat must must complete the lap in minimum amount of time. The boat will be be placed in the start zone. JUDGMENT CRITERIA : Judgment will be based on the time taken by the participant to complete the lap. The teams with best time will be taken into consideration and will be qualified into next round. NOTE : The filtering depends on the number of participants registered in this event.\n\n ROUND 2 ,TASK : To project the ball into the scale(slot) with maximum point. DESCRIPTION : To place the ball from ground into the water where the scales with different points is placed. The ball will be tied to your boat by means of a hook and thread. You can move the boat in any direction so that it falls into the scale holding maximum point. You will be given three chances and points acquired in each chance will be summed up. NOTE: The means of fitting the hook to the boat should be taken care by the participant. The thread will be provided by us. JUDGMENT CRITERIA : It will be based on the points acquired by the team in three attempts. Top four teams with maximum points will advance into the round 3 i.e., the FINAL ROUND.\n\n ROUND 3, FINAL ROUND, TASK : In this event two teams will have to compete each other. PROBLEM STATEMENT: A set of balls of two different colors will be placed randomly in the water. The competing will teams have to place the balls of their choice into their respective goal posts provided at the end of the arena. HINT: The board should be fitted with an arm (like a snow plow) which pushes the ball forward. (You can also use any other suitable mechanism which fulfils the aim of the task.) JUDGEMENT CRITERIA: The team which manages to place maximum number of balls into the post in the given time frame will be declared as winner of the event, followed by the runner-ups.\n\n NOTE:The arena dimensions will be same for all the three rounds.</item>
+        <item>This event is all about your common sense and presence of mind. It is a non-technical event and the Event consists of three rounds. These rounds test your ability to solve simple conundrums and general situations. Each team should consist of 2 or 3 members.\n\n Round 1: (Emoji’s Interpretation) This round consists of 20 Emoji expressions which need to be interpreted. They may be based on Movies, Banks, Cities etc. The main motto of this round is to show that they are creative geniuses. Top 75%% of the participants will be qualified to the next round. Time Duration: 30 Min.\n\n Round 2: (Conundrum )This round consists of 15 riddles which need to be answered. We are going to include two to three questions based on digital India. As the objective of this carnival is to come out with innovative ideas and practical solutions to help transorm India into Digital India. Top 25%% of the participants will be qualified to the final round.Time Duration: 30 Min.\n\n Round 3: (Brain Teaser): This round tests your ability to answer simple yet tricky questions. In this round, we will be giving you 10 situation based questions similar to Sherlock Holmes. The questions are to be answered reason.Time Duration: 30 Min.</item>
+        <item>Treasure Hunt is all about finding your milestones for your destination. This is an amusement oriented hunt with an added flavor of thrill and suspense.</item>
+        <item>As today’s world is dependent on science and technology,we as budding engineers of India must know the basic scientific theories so as to improve the present day technologies to a higher level thus developing India to a “scientific India.”\n\n</item>
+        <item>Participants must prepare a bot (wired or wireless) which must be capable of moving on a metal rod and shooting an ordinary table tennis  ball by aiming the bull\'s eye. Competition consists of 2 rounds. \n\n Qualifying Round: TASK: (Prospective view on DI). Description: The Qualifying Round is based on participant\'s prospective view on Digital India and any scenario in our country. In addition to these there will be brainstorms to get bonus points.\n\n Round 2: Task: (Instant advertising) Description: Here the qualified teams are allotted one of the themes of DI and are asked to design or describe an advertisement instantly to create the awareness about the theme in public . The Team should present their idea(on stage) in a duration of 5mins.\n\n Round 3: Task: (Digital kabaddi) Description: Here ends the game with a surprise round which is completely based on DIGITAL INDIA but the rules of this round are relevant to game KABADDI.ball by aiming the bull\'s eye. Competition consists of 2 rounds.\n\n</item>
+        <item>Design and construct a water propelled rocket pressurized with air to compete against different constraints in separate rounds.\n\n Experience the fun in true engineering while working with rocket propulsion and aerodynamics. One of the most fun events, it will surely leave you missing it once it\'s over. The purpose here is to design and manufacture a water rocket. A water rocket is a type of model rocket using water as its reaction mass. The pressure vessel - the engine of the rocket - is usually a used plastic soft drink bottle. The water is forced out by a pressurized gas, typically compressed air. It is an example of Newton\'s third law of motion. It covers various aspects of product making including design, model construction.</item>
+        <item>Clear the tasks assigned in each round and present the required outputs of your circuits to advance to the next level.\n\nNot a single day of our lives is complete without an electronic device. Right from the alarm clock that wakes us up, to the ventilators used in the hospitals that keep patients alive. All are built with electronic component as its core. Are you ready to check if your knowledge is sufficient for the rapidly changing modern world?</item>
+        <item>This event aims at professional study of concept to ideate for the solution of global challenges and to sway out the information of newborn technology.Participants can present their views on a wide range of topics from international issues to the latest technology.\n\nAbstract must be submitted to gusaccarnival2k15ppt@gmail.com .It is an individual event.\n\n There are 2 phases in the event:\n\n Phase 1: Online Abstract Submission, Phase 2: Full Paper submission for selected abstracts and presentation during the events.\n\n PHASE 1: Online Abstract Submission: Document should contain\n\n (a) First page: Team Name, Your Full Name, Email-ID, contact number, year, college.\n\n (b)Second page: Your paper’s abstract Main Title: All Capitals, Bold, Center- aligned Sub Title: All Capitals, Bold, Left-Justified Text</item>
+        <item> Products are of various types some are helpful and some can be more helpful. The main aim of this event is to enable to participant to design a product to the given requirements. Be creative and think outside the box!\n\n Create your own posters to advertise for a given product/brand. Come and paint your ideas and steal the spotlight.</item>
     </string-array>
 
     <string-array name="events_desc">
-        <item>Construct a rover which can climb a pole</item>
-        <item>Bot designed should be capable of collecting water.</item>
-        <item>Construct a bot to extinguish fire</item>
-        <item>Construct a bot which has the capability to destroy or jump over obstacles</item>
-        <item>Construct a line follower which has to....</item>
-        <item>Participant has to construct a water rocket</item>
-        <item>Participant has to make out a contraption according to..</item>
-        <item>Participant has to construct a bot which has to displace....</item>
-        <item>Participant has to structure a design using ice-cream sticks....</item>
-        <item>Participant has to prepare a circuit with given set of wires</item>
-        <item>Participant has to make a mechanism which has....</item>
-        <item>Participant has to construct a boat which can maneuver....</item>
-        <item>Participant has to design a rover which can travel....</item>
-        <item>Construct a rover which has to tear paper</item>
-        <item>Programming and debugging game with levels</item>
-        <item>Linux and networking game with levels.</item>
-        <item>Make a design in CAD using anthropometric data</item>
-        <item>Simulation of a crisis situation faced by astronauts</item>
-        <item>Construct an ARCH structure without using any binding agent</item>
-        <item>Generate electricity from Bio Logical products.</item>
-        <item>Questions covering different aspects in science and technology.</item>
+        <item>Robotics</item>
+        <item>Electronics</item>
+        <item>Electronics</item>
+        <item>Robotics</item>
+        <item>Robotics</item>
+        <item>Law</item>
+        <item>Law</item>
+        <item>Pharmacy</item>
+        <item>Entertainment</item>
+        <item>Gaming</item>
+        <item>Gaming</item>
+        <item>Entertainment</item>
+        <item>Civil Engineering</item>
+        <item>Robotics</item>
+        <item>Civil Engineering</item>
+        <item>Computer Science</item>
+        <item>Computer Science</item>
+        <item>Electrical</item>
+        <item>Robotics</item>
+        <item>Non Technical</item>
+        <item>Entertainment</item>
+        <item>Quiz</item>
+        <item>Non Technical</item>
+        <item>Entertainment</item>
+        <item>Electronics</item>
+        <item>Technical</item>
+        <item>Poster Making</item>
     </string-array>
-
-
-    <string-array name="events_nontech">
-        <item>National Youth Summit</item>
-        <item>Collage Making</item>
-        <item>Itihaas</item>
-        <item>Photography Competitions</item>
-    </string-array>
-
-    <string-array name="event_desc_nontech">
-        <item>Mock Parliament:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for  the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
-        \n\nTeam Simulation:\nAn event which simulates the proceedings of the Indian legislative assembly and provides a platform for the youth to speak out their opinions.An opportunity for us to step into the shoes of the much critisized politicians and highlight the need for  renewed thinking which will take the country forward .It  requires the participants to express their views in an organised manner and do it in a way which projects their leadership quality and the ability to debate while respecting the views of others.  The mock parliament is a platform for them to step forward and question policy . To highlight to the establishment that they are not satisfied with the status quo and that they have the ideas and an agenda for change.
-            \n\n Contact:\nKaushik – 7702082892
-Srikar – 9704806565\n
-Nithila – 8978370232\n
-Kinnera – 9553564755\n
-Spandana - 9492841970       </item>
-
-        <item>The participants are divided into teams and a common topic is given to all the teams. Newspapers will be provided and the teams have to search the pictures related to the given topic, tear them with hands and  paste them on the chart.\n\n
-        Contact:\nC.V.N.SAHITHI- 8985413181\nSANJANA.B     -8790683944
-        </item>
-        <item>‘Ithihaas’ event is all about Indian mythology, Indian history and how India has been drastically changing since the ancient period.
-Indian history consists of a myriad of mythological events which has both educational and recreational value. Each and every part in it conveys us about the Indian culture and the true values of life.\n\n
-Contact:\nD.SAI.SRUTHI - 8500123996\n : Pravallika. Muppalla - 7386201096\n P.Kamala Priya - 9052771499
-        </item>
-        <item>Competitions for various photographers who are interested in showcasing their works to all.</item>
-    </string-array>
-
 
     <string-array name="litfest">
-        <item>Story Making</item>
-        <item>Dialectic</item>
+        <item>Game of Thrones</item>
+        <item>Harry Potter</item>
         <item>Treasure Hunt</item>
-        <item>Think Out of The Box</item>
-        <item>Wizard\'s Chess</item>
+        <item>Sherlock and Dr Watson</item>
+        <item>Rage Builder</item>
+        <item>Pen is Mightier than Sword</item>
+        <item>Short Stories</item>
+        <item>Advertisement</item>
+        <item>Hot Seat</item>
+        <item>Word Play</item>
+        <item>Speak Your Best</item>
+        <item>Anime Event</item>
+        <item>Entertainment Quiz</item>
+        <item>Best out of Waste</item>
+        <item>Art Attack</item>
     </string-array>
     <string-array name="litfest_desc_display">
-        <item>Do you have a zeal for writing? Here’s a great chance to discover the author in you. If authors like Amish Tripathi and J.K. Rowling have captivated you through their writings, this is the opportunity to captivate others through yours.  So, all the budding authors out there get ready to take all of us on a ride through your creative world.\n\n
-        The event will consist of three rounds. Each round will have a different concept. The participants will have to write their own stories according to the concept of each round.\n\n
-            Contact:\nK.S.N.Teja -9490084711\n
-Shaurya Sharma-9291504990
- </item>
-        <item>Make new friends and get into interesting debate, bury the fear that’s trapped to your guilt and bring out the speaker within you.\n
-        A debate will be conducted in 3 rounds and the topics would be on technology, student related or public issues.
-            \n\nContact:\n Ravali .E	9908517979\n
-            B.Abhinav	7799616140\n
-            T.Prakash babu	9491484023
-        </item>
-        <item>Find the treasure that is hidden in the University. Get back your silly old memories of college life and break clues. Let’s take a rise down memory lane! Participants has to follow a set of directions and discover clues to help solve a puzzle en route.
-        \n\n Contact:\n Anand Vardhan M  - 8985277388\n
-        Anand Vardhan M     8985277388</item>
-        <item>The event "Think Out Of The Box" which has two rounds and in both the rounds participants would be tested on their creative thought process and their lateral thinking ability.\n\n
-        Contact:\n P. Likhitha - 9989734894\n
-         V.L. Reshma - 7794001832</item>
-        <item>Harness all powers of your imagination to create a really impressive , meaningful poster on the given topic. \n\n
-        Contact:\n Dona elsa regi     9032228528\n
-            G.Sushma        8297252023
-        </item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-
+        <item>Valar Morghulis! Men and women of the Seven Kingdoms! Come, join us as we take you to Westeros. Join your favorite house and journey through King\'s Landing to the mighty North. Join the Night\'s Watch or serve the Khaleesi. Sharpen your swords because Winter is coming and this time it\'s bringing something with it.</item>
+        <item>It\'s been 8 years since the last book was published and 4 years since the last movie was released… Yet the magic of Harry Potter still lives within us. Are you a true Potterhead? If yes, then throw your name in the Goblet Of Fire and emerge as a Champion! Participate in an array of events never witnessed before and relive those magical and nostalgic moments.NOX!</item>
+        <item>The Secret Service needs your assistance immediately! The Nazi\'s have found the first clue about the possible location of the secret Mayan treasure. But we need to get there before them! Fortunately, we have the first clue with us. Your mission, should you choose to accept it, will involve finding the Mayan treasure before the Nazi forces can.Good luck, my friend.</item>
+        <item>There has been a murder!! We require your assistance immediately. The details of the murder will be given to you at the crime scene by our police personnel. We need your deduction skills now, more than ever.</item>
+        <item>You love comics? A short comic using a growing set of pre-made cartoon faces, or rage faces, which usually express rage or some other simple emotion, will be given and the participants need to write the comic strip.</item>
+        <item>The pen is mightier than the sword, they say. If you agree to this then showcase your talent by a piece of writing giving your views about the topic. </item>
+        <item>All of us have an inborn talent of making stories. The starting and ending is given by us and you chose to plot the story with cartoon characters and writing it in the most funny &amp; innovative way possible. </item>
+        <item>An event to display your acting skills by making a video of about two minutes for our title sponsors ‘Ask Vizag’.The winner will be recruited as a freelance writer for Ask Vizag! </item>
+        <item>Hot seat focuses on a person\'s compatibility with his/her friend to guess the required word with the help of verbal clues. Also guess words with the help of pictorial aid. </item>
+        <item>This is an event that focuses on your ability to decipher jumbled letters and sentences and form a paragraph. The event also focuses the command you have on spellings. </item>
+        <item>Come out of your comfort zone and raise your voice! Use this platform to excel in the art of Organized Arguing - DEBATE!. But can you come up with a strategy for a topic on the spot! </item>
+        <item>All you anime freaks and geeks out there!, we need your power levels to be “OVER 9000!!!”. Recommended pre-requistes: ninjutsu , taijutsu , genjutsu , and loads of anime knowledge!</item>
+        <item>How well do you know your favorite superstars? Think you know it all about your favorite Books, TV shows and movies? Then test your knowledge and win prizes. </item>
+        <item>The need of the hour is to Reduce, Reuse and Recycle. If you are creative enough to create something beautiful from things that have been discarded, then this event is for you. </item>
+        <item>For all the artists out there, this event is for you. Bring out the colors and paint the town red. Creativity, Complexity of the work, Originality, how well it depicts the theme. </item>
     </string-array>
     <string-array name="litfest_desc">
-        <item>Plot a story according to situations</item>
-        <item>Debate</item>
-        <item>Treasure Hunt with a story</item>
-        <item>Entertainment Quiz</item>
-        <item>Chess with two teams of eight members</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Spotlight Event</item>
+        <item>Word</item>
+        <item>Speak</item>
+        <item>Anime</item>
+        <item>Quiz</item>
+        <item>Crafty</item>
+        <item>Art</item>
     </string-array>
     <string-array name="filmfest_titles">
-        <item>Lights Camera GC</item>
-        <item>AD ZAP</item>
-        <item>Short Film Making</item>
-        <item>Picture Perfect</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
+        <item>Photography</item>
+        <item>Guest Lectures</item>
+        <item>Workshop On Photography</item>
+        <item>Workshop on Film Making</item>
+        <item>Short Film</item>
     </string-array>
     <string-array name="filmfest_display_desc">
-        <item>We wake the director inside of you and shoot a 10 minute movie chronicling the euphoria and jubilation that is Gusac Carnival. Win not only instant fame and admiration and get to screen your video in front of a huge audience!
-        1.	It is a documentary making event.\n
-2.	Team size should be 4 or less.\n
-3.	The teams will have to come to GITAM University and shoot a documentary starting from the 1st day of GC4, encompassing the fest.
-  </item>
-        <item>A great platform to showcase the talents of wannabe advertisement gurus, Ad Zap is one of the most competitive events of GC.This is the best place to show off!\nTime limit for the video advertisement is 1 minute.\nThe one liner will have to be included as a frame of the 1 minute video ad.
-</item>
-        <item>This is your chance to prove your worth by producing a short film of your own and displaying it on a large screen of a large audience to enjoy and appreciate your brilliance.</item>
-        <item>Picture Perfect is an on spot Photography event in which you have to prove your on spot capturing skill.\n
-        A Mega Theme will be provided on the first day of GC and the photographs must be taken inside the campus and during three days of GC.\n
-        Participants are required to bring their own Cameras. No cameras will be provided by the organizers.
-        </item>
+        <item>On Spot Symmetry &amp; Black and white Submission through mail or On 8 th October Submit hard copies at the Event.</item>
+        <item>On 9th of October Guest Lecturers by Celebrities of the Film Industry and chance of Interaction with them.</item>
+        <item>A Photography Workshop On the Basics and Tips to become a Professional Photographer.</item>
+        <item>Technical Basics on Film Making and Technical Secrets behind in Cinema Making.</item>
+        <item>All Kinds of Short Film’s which should not exceed 10mins. Submitted Film Should not be released anywhere Like in Social Media. Submit Video Link through mail or On 8 th October Submit at the Event.</item>
     </string-array>
     <string-array name="filmfest_desc">
-        <item>Shoot a 10 minute movie chronicling Gusac Carnival</item>
-        <item>Platform to showcase the talents of wannabe advertisers</item>
-        <item>Chance to prove your worth by producing a short film </item>
-        <item>Picture Perfect is an on spot Photography event</item>
+        <item>Spotlight Event</item>
+        <item>Guest Lectures</item>
+        <item>Workshop</item>
+        <item>Workshop</item>
+        <item>Spotlight Event</item>
     </string-array>
-
-    <string-array name="events_nontech_desc">
-        <item>Mock Parliament and Team Simulation</item>
-        <item>Online Art Competitions</item>
-        <item>On spot Art Competitions</item>
-        <item>Platform for Co-creation.</item>
-        <item>Competition on designing posters</item>
-        <item>Competition for photographers </item>
-    </string-array>
-
     <string-array name="pronite">
-        <item>Nukkad</item>
-        <item>Centrifuge</item>
-        <item>Wildfire</item>
-        <item>Shake A Leg</item>
+        <item>Showstopper</item>
+        <item>Around the world in Five Minutes</item>
+        <item>Street Fight.</item>
+        <item>Acoustica</item>
+        <item>Albela ( Mono Acting Competition ) </item>
     </string-array>
     <string-array name="pronite_display_desc">
-        <item>Nukkad nataks or street plays have been the medium of people to raise their voices of protest and social change for long. GC attempts to continue this tradition with Nukkad, the street play competition. So clear your voices, get ready for the action, drum it up, and let your message ring out loud.</item>
-        <item>An inter-collegiate dance competition. With no restrictions on genre, Centrifuge witnesses participants flaunting their dance moves in styles ranging from kathakali to contemporary.With the focus on co-ordination, choreography and technique, Centrifuge promises to be an event to test your skills like no other.
+        <item>You have to love dancing to stick to it. It gives you nothing back, no manuscripts to store away, no paintings to show on walls and maybe hang in museums, no poems to be printed and sold, nothing but that single fleeting moment when you feel alive.
+Any Style Any Theme
+Duration 3-4 minutes.</item>
+        <item>A group dance competition with the theme "world dance".
+No of participants: 2 to 8
+Duration 5-6 minutes.</item>
+        <item>One on One Street dance.
+
+For more information, Please contact
+Akanksha : +91-9676751057
+Karthik Sri : +91-8019450684</item>
+        <item>
+            Strike a chord, strum a rhythm and jam to the groove. Let it be soothing bluesy sound or the vibrant classical tones, bring out the best acoustic jam you can with your band.\n\n
+
+Round(s): only one round\n\n
+
+
+Rules and Regulations:\n\n
+
+Participants must bring their own equipment\n
+If effect processors are used, they must be set to an acoustic patch\n
+No distorted guitars or patches to be used\n
+Maximum number of band members must not exceed 5 participants \n
+Participants must adhere to the time slot mentioned\n
+Instead of drums, any acoustic percussion instrument is to be used (which has to be brought by the participant)
+No profane lyrics to be sung\n\n
+
+Judging Criteria:\n\n
+
+Control over timing and rhythm\n
+Coordination and sync among members\n
+Overall tone of the band\n
+Dynamics of individual playing\n
+Intonation over notes and scales\n\n
+
+Contact Details :\n\n
+Harsh : +91-9640624840 (suri.harsha@yahoo.com)\n\n
+Krishna : +91-7093188734 (kmperi12@gmail.com)
         </item>
-        <item>Rock band competition. With the best bands from around the country, amazing prizes in cash and kind, wildfire promises to be a spectacle this year. So, get ready to headbang!!
+        <item>The stage is set for you to perform. Come up with the topic of your choice impress the judges and get a chance to in the carnival night. Exciting prizes to be won.
+Duration 5-6 minutes.\n\n
+        For more information, Please contact \n\n
+Kartik : +91-7731036100 \n
+Krati : +91-9704195293
         </item>
-        <item>GC presents the much-awaited solo dance competition. Prove your mettle against tough competition in this unique event, with challenges from impromptu choreography to situational depictions. Can you come up tops in the event where we test everything from skill to energy to emotion? If you think you can, come forward and shake a leg.
-        </item>
-        <item>Organizer</item>
-        <item>Organizer</item>
     </string-array>
     <string-array name="pronite_desc">
-        <item>Nukkad, the street play competition</item>
-        <item>An inter-collegiate dance competition with no restrictions on genres.</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Organizer</item>
-        <item>Rock band competition. </item>
-        <item>GC presents the much-awaited solo dance competition</item>
+        <item>Dance</item>
+        <item>Group Dance</item>
+        <item>Dance</item>
+        <item>Music</item>
+        <item>Acting</item>
     </string-array>
 
     <string-array name="guestLectures">
@@ -381,9 +404,272 @@ Shaurya Sharma-9291504990
     </string-array>
 
     <string-array name="guestlc_longDesc">
-        <item>He is Managing Director - Intel ,India and South Asia &amp; Middle East ,WiMAX Program ,2008 Chairman, IT,TELECOM and Convergence Committee,ASSOCHAM,- a national Chamber of commerce A member of National Mfg Competitive Commission,(NMCC)He is now the chairman and CEO of QUADGEN Wireless Solutions Inc , USA BT (British telecom) India Pvt Ltd , Lucent India, PRESIDENT &amp; CEO of Tellabs India , Mg.Director, India. He was also the President of Reliance Telecommunications.A core group team of first founder 10 members at CDOT and G.M ,CDO.He received Honarary Doctorate awarded from Andhra University and Business Leadership Award , Assocham , a National Chamber of Commerce.He also received National Research Development Council (NRDC) award from President of India Innovation , Leadership &amp; Achievement Awards, Tellabs ,USA</item>
+        <item>He is Managing Director - Intel ,India and South Asia &amp;amp; Middle East ,WiMAX Program ,2008 Chairman, IT,TELECOM and Convergence Committee,ASSOCHAM,- a national Chamber of commerce A member of National Mfg Competitive Commission,(NMCC)He is now the chairman and CEO of QUADGEN Wireless Solutions Inc , USA BT (British telecom) India Pvt Ltd , Lucent India, PRESIDENT &amp; CEO of Tellabs India , Mg.Director, India. He was also the President of Reliance Telecommunications.A core group team of first founder 10 members at CDOT and G.M ,CDO.He received Honarary Doctorate awarded from Andhra University and Business Leadership Award , Assocham , a National Chamber of Commerce.He also received National Research Development Council (NRDC) award from President of India Innovation , Leadership &amp; Achievement Awards, Tellabs ,USA</item>
         <item>Entertainment and entrepreneurship have been the key themes in her work life. In a career spanning over 16 years, she had launched a film magazine, hosted a film–based radio talk show, and as entertainment evolved courtesy the influx of technology, she kept pace and co–founded a mobile app based on the Indian entertainment industry.Being a seasoned entrepreneur, she enjoys working with startups used to manage an ecosystem of entrepreneurs, mentors, investors and Customers/Partners for Organisations like Microsoft Ventures,and for Pluggd.in India, in addition to promoting women entrepreneurs in India through my activities with PS Academy and other ecosystem partners.She have been the recipient of the British Council’s Young Creative Entrepreneur– India 2008–09 and have represented the country at the International Young Creative Entrepreneurs Program held in London in October, 2008</item>
-        <item>Dr Pawan Agrawal is the founder and President of Kamalabai Educational and Charitable Trust, Mumbai. An International Motivational Speaker, Author, Educationist, Business Consultant and successful Entrepreneur. He inspires and encourages people, making them realize their true potential. He delivers session on “Supply Chain Management of Mumbai Dabawala and Mumbai Paperwala”- grate story where deliverables or takeaways such as Time Management, Retention/attrition, Commitment, Leadership, Customer satisfaction, Quality, 100 %Execution, Logistics &amp; Supply chain etc can be shared. He has given several talks around India, as well as in various countries in Asia and Africa and beyond the Pacific in the United States and the United Kingdom. His 30 years of research, understanding and experience have helped people on the path of personal growth and organizational fulfillment. He has invited as Guest speaker and Key note speaker to many organizations also.</item>
+        <item>Dr Pawan Agrawal is the founder and President of Kamalabai Educational and Charitable Trust, Mumbai. An International Motivational Speaker, Author, Educationist, Business Consultant and successful Entrepreneur. He inspires and encourages people, making them realize their true potential. He delivers session on “Supply Chain Management of Mumbai Dabawala and Mumbai Paperwala”- grate story where deliverables or takeaways such as Time Management, Retention/attrition, Commitment, Leadership, Customer satisfaction, Quality, 100 %%Execution, Logistics &amp; Supply chain etc can be shared. He has given several talks around India, as well as in various countries in Asia and Africa and beyond the Pacific in the United States and the United Kingdom. His 30 years of research, understanding and experience have helped people on the path of personal growth and organizational fulfillment. He has invited as Guest speaker and Key note speaker to many organizations also.</item>
+    </string-array>
+
+    <string-array name="workshops_titles">
+        <item>Workshop on 3D Printing</item>
+        <item>QuadRotor Design,Fabrication and Flying</item>
+        <item>Solar Smart Energy Systems</item>
+        <item>Automobile Prototyping Workshops</item>
+        <item>Gesture Based Robotics</item>
+        <item>Apple Workshop</item>
+    </string-array>
+    <string-array name="workshops_drawables">
+        <item>@drawable/steam</item>
+        <item>@drawable/wargames</item>
+        <item>@drawable/science</item>
+        <item>@drawable/linefollower</item>
+        <item>@drawable/clashofbots</item>
+        <item>@drawable/apple</item>
+    </string-array>
+
+    <string-array name="workshops_shortDesc">
+        <item>8th October, 2 Day Workshop.
+</item>
+        <item>8th October 2 Day Workshop</item>
+        <item>8th October 2 Day Workshop</item>
+        <item>8th October 2 Day Workshop</item>
+        <item>8th October 2 Day Workshop</item>
+        <item>9th October 2 Day Workshop</item>
+    </string-array>
+
+    <string-array name="workshops_longDescs">
+        <item>Imagine a world where you can make anything you want, just by pressing a single key “PRINT”. Ever wondered the process involved to make a three-dimensional object?.\n\n
+
+To burst this question mark in your head, GUSAC Carnival 2015 brings to you a workshop on 3D printing.\n\n
+
+3D Printing is an Additive Manufacturing technique that creates a physical object from a virtual 3D CAD model by depositing successive layers of material. They work like the traditional inkjet printers, but instead of ink, a 3D printer deposits desired material to manufacture an object from its digital format..\n \n
+
+What will you be learning from this workshop:\n\n
+
+Learn about the materials, designing of CAD models, working of a 3D Printer.\n
+General Principles:\n\n
+
+Modeling\n
+Printing\n
+Finishing\n
+Understand how to build and calibrate a 3D printer.\n
+Understand the basics of G code generation.\n
+The participants will get 3D printed models that they design.\n
+
+This new upcoming technology is to make product visualization from design stage simpler. Here, participants will design, operate and print parts using 3D printers on their own.GUSAC Carnival 2015 comes with the best team to impart knowledgeabout 3D printing, on the 8th and 9th of October with a cost of 1100 INR per participant only.\n\n\n</item>
+
+<item>
+Many young minds were inspired after Aamir Khan flew an innovative object which was spectacular in its flight. That splendid air vehicle is known by the name of Quadrotor.\n\n Quadrotor is a multi rotor air vehicle which has marked its interests for the benefit of both civil and military domains. It’s amazing maneuverability and the ease to fly in constricted locations has achieved itself a remarkable position in the aviation sector.\n\n
+
+GUSAC CARNIVAL now bringing you the opportunity to understand the theory behind the functioning of quadrotors and their design. It makes the participants to work hands-on in designing the circuit and to build the rotary wing aircrafts. This workshop takes the participants through a series of interactive lectures and design sessions supplemented by practical sessions, thereby providing a complete learning experience.\n\n
+
+What will you learn after attending the workshop:\n\n
+
+Develop very good understanding of quadrotor\n
+Design the entire quadrotor themselves under the guidance of professionals\n
+Will lead to very good job opportunities especially in the area of UAV’s and MAV’s\n
+Can easily use this experience to develop good B.Tech/ M.Tech projects\n
+Helps to face job interviews with confidence\n
+Hands-on experience in addition to their classroom trainings will transform the students into better engineers\n
+Opportunity to interact with experts to discuss career options\n
+The highlights of the course are :\n\n
+
+Introduction to design of quadrotor\n
+Introduction to instrumentation of quadrotor\n
+Exposure to multi disciplinary content\n
+Complete quadrotor designed and fabricated by the participants. No ready-to-assemble kits.\n
+Hands-on experience for participants with motors, radios, control boards etc.\n
+Encourages participants to think and come up with new designs\n
+Opportunity for online examination and certification\n
+Certificates issued to all participants\n
+Good multimedia content to help participantsgrasp the material easily\n
+Career guidance by experienced faculty\n
+Workshop developed by IIT Kanpur Aerospace Engineering Graduates\n
+2 Day workshop – includes lectures, design sessions, fabrication sessions and flying. Cost: INR 7500 for team of 4-5 members for economy kit*.\n\n
+
+Cost: INR 12500 for team of 4-5 members who want to buy the kit permanently (Complete Kit) Cost includes training material, software and instruction manual.Economy Kit has some components for temporary use during the workshop. This is done to make the workshop affordable to all.\n\n
+</item>
+        <item>Did you ever wonder about how solar and Smart Energy Systems work and how to make them? Well, to satisfy your mind boggling curiosity; GUSAC Carnival 2015 brings to you; the exciting tech packed Solar and Smart Energy Systems Workshop! So gear up!\n\n
+
+Solar and Smart Energy Systems Workshop involves hands-on experience on two emerging fields - Renewable energy and Electrical Energy Efficiency.On the first day, participants learn about renewable energy sources and the techniques to yield electrical energy using solar power. This includes practical exposure to solar energy production along with real-life application of charging mobile devices.The second day starts with concepts on Smart energy and other industry trends like green energy, smart building, smart grid and energy harvesting technologies. To help participants learn about the efficient use of electrical energy, a prototype Smart Traffic Control System is executed as project outcome.\n\n
+Course Highlights :\n\n
+
+Design and Develop Smart Traffic Signal Control Systems and the Solar-powered Mobile Charger\n
+Understanding Renewable Energy and Smart Systems\n
+Exposure to Embedded systems, Microcontroller programming and Digital Sensors\n
+Practical experience with live working projects on Smart system and solar panels\n
+The Fee is INR 6000/per team (Max 5 students per team\n\n
+
+Course Structure :\n\n
+
+Lecture Session - 3 hrs\n
+Circuit Design Session - 3 hrs\n
+Solar Mobile Charger Testing Session - 2 hrs\n
+Design of Smart Traffic Control System – 3 hrs\n
+Hardware and Programming Session - 3 hrs\n
+Testing of Traffic control system - 2 hrs\n\n
+Topics Covered :\n\n
+
+Renewable energy - An Introduction\n
+Solar panel – Functioning &amp; Applications\n
+Smart Energy Systems – Necessity &amp; Implementation\n
+Microcontroller - Architecture\n
+Development Board - Design &amp; Components\n
+Digital sensor – Circuit and calibration\n
+Traffic controlled system-Design and implementation\n
+Programming - Embedded C Programming, IDE &amp; Flashing\n\n
+Kit Content :\n\n
+
+21V Solar Panel\n
+Skyfi Labs\' Development Board\n
+9V Battery\n
+Digital Sensors\n
+Components of mobile charger\n
+Nose pliers*\n
+Wire stripper*\n
+Screw driver*\n
+Other working tools\n\n
+* Marked items will be taken back</item>
+
+<item>Automobile design (RC CAR) gives you a unique experience of designing and understanding the concepts of the RC car, the participants need to build their own radio-controlled car replicating most of the systems present in an actual automobile. It is based on implementation of concepts powertrain, suspension, steering systems etc.\n\n
+
+What will you learn after attending the workshop :\n\n
+
+Basics of Automobiles.\n
+Gain knowledge about different automobile systems like powertrain, transmission, suspension, steering systems.
+\nAerodynamics and stability.\n
+Aerodynamic analysis of car using ALTAIR engineering\n
+Controlling automobile using Radio controller.\n
+Types and components of Radio Control cars.\n
+Design and fabrication of an RC Car.\n\n
+Course Highlights :\n\n
+
+Design &amp; build your own RC Car with Powertrain, suspension &amp; steering systems\n
+Comparative case studies about on-road automobiles for better understanding\n
+Introduction to latest trends in Automobile Engineering\n\n
+Concepts Covered :\n\n
+
+Basics of Automobiles\n
+Powertrain System\n
+Transmission Systems\n
+Suspension Systems (wishbone, double wishbone,trailing arm, multi-link)\n
+Steering Systems (rack and pinion, Cam &amp; lever,worm &amp; lever)\n
+Locomotion (Tyres/brakes/wheels)\n
+Chassis\n
+Aerodynamics and Stability\n
+Radio control car (over view)\n
+Fabrication of RC Car\n
+INR 6000 per a team of max. 5.\n\n
+
+Course Structure:\n\n
+
+Basics of Automobiles – Duration 0.5 hours.\n
+Detailed exposure to different systems in Automobile – Duration 5 hour\n
+Comparative Case studies &amp; Group Discussion on existent automobiles – Duration 1 hour\n
+Discussion of problem statements from previous international student automobile competitions like FSAE, BAJA etc., - 0.5 hour
+\nFuture of Automobiles – Duration 30 minutes.\n
+Design &amp; Fabrication of an RC Car – 8 hour.\n\n
+Kit Contents\n\n
+
+DC Motors *\n
+Electronic Speed Controller *\n
+Transmitter *\n
+Receiver *\n
+Li-Po Battery *\n
+Servo Motor (1 piece) *\n
+Suspensions\n
+Wheels (4 pieces)\n
+Plastic Gears\n
+Chassis\n
+Control Rods\n
+Epoxy Glue\n
+Working Tools*\n
+Other miscellaneous items\n\n
+*Marked will be taken back, working tools will be taken back after the workshop.</item>
+        <item>Have you ever been amazed by the way lifeless metal is transformed into a beautiful robot? Ever wanted to create a Robot of your own? Well now you can complete your dream and blow life into your own robot, GUSAC Carnival 2015 brings you a platform to work on “Gesture Robotics”.\n\n
+
+Gesture robotics is a multidisciplinary field involving computer science and engineering. Addressing the design of automated systems, it lies at the intersection of artificial intelligence, computational vision.\n\n
+
+Get a hand on experience with:\n\n
+
+Different ways that mobile robots can move themselves around, and which are most suitable for different environments\n
+How a variety of sensors receive information about the environment around them.\n
+Ways to classify sensors: proprioceptive vs exteroceptive; active vs passive\n
+How a feedback system works.\n
+How robots follow logical sequential instructions in order to function.\n
+To create basic flow diagrams and pseudo code to program what a robot will do.\n
+How to develop a list of design requirements for a robotic system.\n
+How to design, implement and troubleshoot a robotic system.\n
+How to program your phone into a remote control.\n
+A lively and interactive session which will bring you a step closer to the world or robotic.\n\n
+
+Workshop fee is INR 6000 per team of 5 members. And Hurry up guys!!!! Register soon with GUSAC Carnival 2015 and grab the amazing opportunity to build your own Robot!!!\n\n
+
+        </item>
+
+        <item>Day 1 :\n\n
+
+Mac Basics with OS X Professional (1 Hour)\n
+Live Experience &amp; Showcase of All Apple Products (2 hours).\n
+Editing Movies using Mac &amp; FinalCutPro X (3 hours).\n
+A Practice session will be arranged for Mac User’s (1 Hour)\n
+\nDay 2 :\n
+
+Clear in detail on All Apple Devices Keynote (2 Hours).\n
+Live Experience &amp; Showcase of All Apple Products (4 hours).\n\n
+Session Summary :\n\n
+
+Training on “Use your Apple Device Professionally” (All Apple Devices)\n
+Training on Mac Basics with OS X Professional.\n
+Training on Editing Movies using Mac &amp; FinalCutPro X.\n
+Event Host : Yogesh B\n\n
+
+Session Lecture 1 : Ravi Kumar J\n
+Session Lecture 2 : Kartheek T\n\n
+Other info :\n\n
+
+Digital Kits will be given to everyone.\n
+An Apple Issued Training Certificate will be given after Course Completion.\n
+People Interested can attend the Certification exams at the session it self, by paying as per the Certification.\n
+People attend Certification exam, the Candidate Name will be displayed in Apple Professional Registry.\n
+Cost of the workshop is INR 2000.\n\n
+        </item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="sponsors">
+        <item>Ask Vizag</item>
+        <item>Get Buddy</item>
+        <item>Master Aluminum</item>
+    </string-array>
+
+    <string-array name="sponsors_desc">
+        <item>Title Sponsor</item>
+        <item>Associate Sponsor</item>
+        <item>Associate Sponsor</item>
+    </string-array>
+
+    <string-array name="dummy_data">
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
+        <item>To be updated</item>
     </string-array>
 
     <string name="title_activity_splash">SplashActivity</string>
@@ -393,9 +679,9 @@ Shaurya Sharma-9291504990
     <string name="hours">hrs</string>
     <string name="minutes">mins</string>
     <string name="seconds">secs</string>
-    <string name="carnival_description">GUSAC Carnival - GUSAC\'s (GITAM UNIVERSITY STUDENT ACTIVITY CENTRE) Carnival :: A National Level Knowledge Symposium. Coming back, 18,19,20 March 2015!</string>
+    <string name="carnival_description">GUSAC Carnival - GUSAC\'s (GITAM UNIVERSITY STUDENT ACTIVITY CENTRE) Carnival :: A National Level Knowledge Symposium. Coming back, 8th,9th and 10th October 2015!</string>
     <string name="title_activity_event_display">EventDisplay</string>
-    <string name="about">The show has been going on since the past three years, but this time, it\'s going to be bigger and better! Get ready for three amazing days of a perfect blend of culture innovation and technology this year at the GUSAC carnival. With events across the technical and non technical spectrum, get ready to show what you are made of on the 18, 19 and 20 of this March. With bigger rewards, higher levels of innovation and newer technologies in the offering, gear up to have the time of your life this year! Make sure to mark your presence! Gusac carnival - Where enthusiasm meets talent.</string>
+    <string name="about">The show has been going on since the past three years, but this time, it\'s going to be bigger and better! Get ready for three amazing days of a perfect blend of culture innovation and technology this year at the GUSAC carnival. With events across the technical and non technical spectrum, get ready to show what you are made of on the 8th, 9th and 10th of this March. With bigger rewards, higher levels of innovation and newer technologies in the offering, gear up to have the time of your life this year! Make sure to mark your presence! Gusac carnival - Where enthusiasm meets talent.</string>
     <string name="gusac_desc">GITAM University Science and Activity Centre. The GUSAC team is privileged to invite the students across the nation to participate in the various events conducted at the carnival.GUSAC provides scope for students by imparting knowledge through classes, friendly seminars, practical assignments; it also enables them to build a team for participating in fests and assists them with the required infrastructure to make their projects, besides creating a platform for the student research.</string>
     <string name="for_more_details">For more details, visit:</string>
     <string name="description">Description:</string>
@@ -409,7 +695,7 @@ Shaurya Sharma-9291504990
     <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
     <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
     <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
-    <string name="server_registered">From Server: successfully added device!</string>
+    <string name="server_registered">From Server: successfully registered!</string>
     <string name="server_unregistered">From Demo Server: successfully removed device!</string>
     <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
     <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>

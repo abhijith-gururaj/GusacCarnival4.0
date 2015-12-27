@@ -39,76 +39,8 @@ public class JSONParser {
 
     }
 
-
-
-    public JSONObject makeHttpGetRequest(String url, String method, String timestamp) {
-
-        try {
-            if (method.equals("GET")) {
-
-
-                HttpParams httpParameters = new BasicHttpParams();
-
-                // Set the timeout in milliseconds until a connection is established.
-                // The default value is zero, that means the timeout is not used.
-                int timeoutConnection = 3000;
-                HttpConnectionParams.setConnectionTimeout(httpParameters, timeoutConnection);
-                int timeoutSocket = 5000;
-                DefaultHttpClient httpClient = new DefaultHttpClient(httpParameters);
-                try {
-                    HttpGetEntity request = new HttpGetEntity(url);
-                    StringEntity params2 = new StringEntity("{\"last\":\"" + timestamp + "\"}");
-
-
-                    request.addHeader("content-type", "application/json");
-                    request.setEntity(params2);
-                    HttpResponse response = httpClient.execute(request);
-                    HttpEntity httpEntity = response.getEntity();
-
-                    is = httpEntity.getContent();
-
-                    // handle response here...
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-
-                } finally {//perform closing operation
-                    httpClient.getConnectionManager().shutdown();
-
-                }
-
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-            StringBuilder sb = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                sb.append(line);
-            }
-            is.close();
-            json = sb.toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-        try {
-            jObj = new JSONObject(json);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        return jObj;
-
-    }
-
     public JSONObject makeHttpPostRequest(String url, String method,
                                           List<NameValuePair> params) {
-
         // Making HTTP request
         try {
 
@@ -144,16 +76,13 @@ public class JSONParser {
             e.printStackTrace();
         }
 
-
         try {
             jObj = new JSONObject(json);
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-
         return jObj;
-
     }
 }
 

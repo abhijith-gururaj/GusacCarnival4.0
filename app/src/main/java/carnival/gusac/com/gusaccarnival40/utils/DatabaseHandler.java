@@ -14,7 +14,7 @@ import java.util.HashMap;
 import carnival.gusac.com.gusaccarnival40.R;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
-    public static final int DB_VERSION = 8;
+    public static final int DB_VERSION = 9;
 
     public static final String DB_NAME = "gusac_carnival";
     public static final String TABLE_EVENT_CATEGORY = "event_category";
@@ -227,12 +227,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     public void initDetails(Context context) {
-        String[] categories = {"Events", "Literary Fest", "Cultural Night", "Guest Lectures"};
+        String[] categories = {"Events", "Literary Fest", "Cultural Night", "Guest Lectures","Film Festival","Sponsors"};
         String[] events = context.getResources().getStringArray(R.array.events);
         String[] litfest = context.getResources().getStringArray(R.array.litfest);
         String[] pronite = context.getResources().getStringArray(R.array.pronite);
         String[] guestlcs = context.getResources().getStringArray(R.array.guestLectures);
-        String[][] mainEvents = {events, litfest, pronite, guestlcs};
+        String[] filmfests= context.getResources().getStringArray(R.array.filmfest_titles);
+        String[] sponsors=context.getResources().getStringArray(R.array.sponsors);
+        String[][] mainEvents = {events, litfest, pronite, guestlcs,filmfests,sponsors};
         int index = 0;
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values;
@@ -260,24 +262,36 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String[] proniteLongDescs = resources.getStringArray(R.array.pronite_display_desc);
         String[] guestlcShortDescs = resources.getStringArray(R.array.guestlc_shortDesc);
         String[] guestlcLongDescs = resources.getStringArray(R.array.guestlc_longDesc);
-        String[] problemStatement = resources.getStringArray(R.array.problem_statements);
-        String[] rules = resources.getStringArray(R.array.rules);
-        String[] criteria = resources.getStringArray(R.array.criteria);
-        String[] organizers = resources.getStringArray(R.array.organizers);
-        String[][] shortDescs = new String[][]{eventShortDescs, litfestShortDescs, proniteShortDescs, guestlcShortDescs};
-        String[][] longDescs = new String[][]{eventLongDescs, litfestLongDescs, proniteLongDescs, guestlcLongDescs};
+        String[] filmfestShortDescs=resources.getStringArray(R.array.filmfest_desc);
+        String[] filmfestLongDescs=resources.getStringArray(R.array.filmfest_display_desc);
+        String[] sponsorsDesc=resources.getStringArray(R.array.sponsors_desc);
+        String[] dummyData=resources.getStringArray(R.array.dummy_data);
+
+        String[][] shortDescs = new String[][]{eventShortDescs, litfestShortDescs, proniteShortDescs,
+                guestlcShortDescs,filmfestShortDescs,sponsorsDesc};
+        String[][] longDescs = new String[][]{eventLongDescs, litfestLongDescs,
+                proniteLongDescs, guestlcLongDescs,filmfestLongDescs,dummyData};
+        String[][] problemStatements = new String[][] {resources.getStringArray(R.array.problem_statements),
+                dummyData,dummyData,dummyData,dummyData,dummyData};
+        String[][] rules = new String[][]{resources.getStringArray(R.array.rules),
+                dummyData,dummyData,dummyData,dummyData,dummyData};
+        String[][] criteria = new String[][]{resources.getStringArray(R.array.criteria),
+                dummyData,dummyData,dummyData,dummyData,dummyData};
+        String[][] organizers = new String[][]{resources.getStringArray(R.array.organizers),
+                dummyData,dummyData,dummyData,dummyData,dummyData};
+
 
         for (int i = 0; i < mainEvents.length; i++) {
             for (int j = 0; j < mainEvents[i].length; j++) {
-                Log.d("Inserting: ", mainEvents[i][j] + " : " + shortDescs[i][j] + " : " + longDescs[i][j]);
+                Log.d("Inserting: ", mainEvents[i][j] + " : " + shortDescs[i][j] + " : " + longDescs[i][j]+" : "+criteria[i][j]);
                 ContentValues values = new ContentValues();
                 values.put(EVENT_NAME, mainEvents[i][j]);
                 values.put(EVENT_SHORT_DESC, shortDescs[i][j]);
                 values.put(EVENT_LONG_DESC, longDescs[i][j]);
-                values.put(EVENT_RULES, rules[i]);
-                values.put(EVENTS_JUDGING_CRITERIA, criteria[i]);
-                values.put(EVENT_PROBLEM_STATEMENT, problemStatement[i]);
-                values.put(EVENT_ORGANIZERS, organizers[i]);
+                values.put(EVENT_RULES, rules[i][j]);
+                values.put(EVENTS_JUDGING_CRITERIA, criteria[i][j]);
+                values.put(EVENT_PROBLEM_STATEMENT, problemStatements[i][j]);
+                values.put(EVENT_ORGANIZERS, organizers[i][j]);
 
                 long i1 = db.insert(TABLE_EVENTS_DATA, null, values);
                 Log.d("isInserted? : ", String.valueOf(i1));

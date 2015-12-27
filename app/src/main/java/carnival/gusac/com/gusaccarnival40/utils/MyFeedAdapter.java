@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 import carnival.gusac.com.gusaccarnival40.FeedInfo;
 import carnival.gusac.com.gusaccarnival40.R;
-import carnival.gusac.com.gusaccarnival40.utils.PollingService;
 
 /**
  * Created by Abhijith Gururaj.
@@ -62,7 +61,7 @@ public class MyFeedAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         layout = inflater.inflate(R.layout.feed_list_row, parent, false);
 
         feedHead = (TextView) layout.findViewById(R.id.feed_head);

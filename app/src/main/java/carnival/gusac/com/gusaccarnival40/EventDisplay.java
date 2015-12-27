@@ -22,7 +22,7 @@ import java.util.HashMap;
 import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
 
 /**
- * Created by Messi10 on 31-Jan-15.
+ * Created by Abhijith Gururaj.
  */
 
 public class EventDisplay extends AppCompatActivity {
@@ -76,7 +76,8 @@ public class EventDisplay extends AppCompatActivity {
 
         tag = i.getStringExtra("tag");
 
-        if (tag.equals("guestlc")) {
+        if (tag.equals("guestlc")||tag.equals("workshops")) {
+
             problemStatement.setVisibility(View.GONE);
             event_prob.setVisibility(View.GONE);
             rules.setVisibility(View.GONE);
@@ -87,22 +88,24 @@ public class EventDisplay extends AppCompatActivity {
             event_organizers.setVisibility(View.GONE);
         }
         position = i.getIntExtra("eventid", 0);
-
-        HashMap<String, String> hashMap = new DatabaseHandler(this).getEventDetails(i.getStringExtra("title"));
-        desc_event.setText(hashMap.get("short_desc"));
-        problemStatement.setText(hashMap.get("problem_statement"));
-        longDesc.setText(hashMap.get("long_desc"));
-        rules.setText(hashMap.get("rules"));
-        criteria.setText(hashMap.get("criteria"));
-        organizers.setText(hashMap.get("organizers"));
-
-        //Get the resources to initialize the various
-        // string arrays present in strings.xml
         res = getResources();
+            if(!tag.equals("workshops")) {
+                HashMap<String, String> hashMap = new DatabaseHandler(this).getEventDetails(i.getStringExtra("title"));
 
+                desc_event.setText(hashMap.get("short_desc"));
+                problemStatement.setText(hashMap.get("problem_statement"));
+                longDesc.setText(hashMap.get("long_desc"));
+                rules.setText(hashMap.get("rules"));
+                criteria.setText(hashMap.get("criteria"));
+                organizers.setText(hashMap.get("organizers"));
+            }else {
+                String[] descs=res.getStringArray(R.array.workshops_longDescs);
+                desc_event.setText(i.getStringExtra("desc"));
+                longDesc.setText(descs[position]);
+
+            }
+        }
         //displayDescription(tag, position);
-
-    }
 /*
 This method extracts the titles and descriptions of the respective events
 using a switch case. Based on the user's click, the method initializes the arrays
@@ -114,10 +117,6 @@ and displays them in the textviews.
                 head=res.getStringArray(R.array.events);
                 desc = res.getStringArray(R.array.events_main_desc);
                  break;
-            case "event_nontech":
-                head=res.getStringArray(R.array.events_nontech);
-                desc = res.getStringArray(R.array.event_desc_nontech);
-                break;
             case "litfest":
                 head=res.getStringArray(R.array.litfest);
                 desc = res.getStringArray(R.array.litfest_desc_display);

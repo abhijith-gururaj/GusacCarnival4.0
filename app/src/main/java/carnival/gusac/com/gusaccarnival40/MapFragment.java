@@ -60,6 +60,7 @@ public class MapFragment extends Fragment {
     public void onResume() {
         super.onResume();
         mapView.onResume();
+        ((Welcome) getActivity()).setActionbarTitle("Home");
     }
 
     @Override

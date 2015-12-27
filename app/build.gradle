@@ -9,8 +9,9 @@ android {
         applicationId "carnival.gusac.com.gusaccarnival40"
         minSdkVersion 10
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        maxSdkVersion 23
+        versionCode 2
+        versionName "2.0"
     }
     buildTypes {
         release {
@@ -25,8 +26,6 @@ dependencies {
     compile project(':ProgressWheel')
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.android.support:design:22.2.0'
-    compile 'com.android.support:recyclerview-v7:22.2.0'
-    compile 'com.melnykov:floatingactionbutton:1.1.0'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
     compile 'com.jpardogo.materialtabstrip:library:1.0.6'
     compile 'com.android.support:palette-v7:22.2.0'

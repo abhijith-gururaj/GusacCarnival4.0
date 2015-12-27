@@ -18,9 +18,6 @@ public class SplashActivity extends ActionBarActivity {
         setContentView(R.layout.activity_splash);
         //Handler for sending the message on the main thread
         int SPLASH_DISPLAY_LENGTH = 3000;
-        DatabaseHandler db = new DatabaseHandler(this);
-        db.initDetails(this);
-        db.close();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

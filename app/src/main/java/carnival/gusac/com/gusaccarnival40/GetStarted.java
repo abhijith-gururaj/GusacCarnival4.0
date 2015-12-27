@@ -11,10 +11,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import carnival.gusac.com.gusaccarnival40.utils.AlertDialogManager;
 import carnival.gusac.com.gusaccarnival40.utils.ConnectionDetector;
 import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
+import carnival.gusac.com.gusaccarnival40.utils.Validators;
 
 import static carnival.gusac.com.gusaccarnival40.GCMUtils.SENDER_ID;
 import static carnival.gusac.com.gusaccarnival40.GCMUtils.SERVER_URL;
@@ -37,6 +39,11 @@ public class GetStarted extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), Welcome.class));
             finish();
         }
+
+        DatabaseHandler db = new DatabaseHandler(this);
+        db.initDetails(this);
+        db.close();
+
         cd = new ConnectionDetector(getApplicationContext());
 
         // Check if Internet present
@@ -76,23 +83,31 @@ public class GetStarted extends AppCompatActivity {
                 String email = txtEmail.getText().toString();
                 String phone = txtPhone.getText().toString();
                 // Check if user filled the form
-                if (name.trim().length() > 0 && email.trim().length() > 0) {
-                    // Launch Main Activity
+                Validators validators = new Validators(GetStarted.this);
+                if (validators.isOnline()) {
+                    if (name.trim().length() > 0 && email.trim().length() > 0 && phone.trim().length() > 0) {
+                        // Launch Main Activity
 
+                        if (validators.isValidEmailAddress(email)) {
+                            Intent i = new Intent(getApplicationContext(), Welcome.class);
+                            Log.d("Register", "Starting Main");
+                            // Registering user on our server
+                            // Sending registraiton details to MainActivity
 
-                    Intent i = new Intent(getApplicationContext(), Welcome.class);
-                    Log.d("Register", "Starting Main");
-                    // Registering user on our server
-                    // Sending registraiton details to MainActivity
-
-                    DatabaseHandler db = new DatabaseHandler(GetStarted.this);
-                    db.addUserDetails(name, email, phone);
-                    startActivity(i);
-                    finish();
+                            DatabaseHandler db = new DatabaseHandler(GetStarted.this);
+                            db.addUserDetails(name, email, phone);
+                            startActivity(i);
+                            finish();
+                        } else {
+                            Toast.makeText(GetStarted.this, "Please enter valid email address.", Toast.LENGTH_LONG).show();
+                        }
+                    } else {
+                        // user doen't filled that data
+                        // ask him to fill the form
+                        alert.showAlertDialog(GetStarted.this, "Registration Error!", "Please enter your details", false);
+                    }
                 } else {
-                    // user doen't filled that data
-                    // ask him to fill the form
-                    alert.showAlertDialog(GetStarted.this, "Registration Error!", "Please enter your details", false);
+                    Toast.makeText(GetStarted.this, "Cannot connect to the net. Please make sure your device is online!", Toast.LENGTH_LONG).show();
                 }
             }
         });

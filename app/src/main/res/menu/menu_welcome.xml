@@ -6,7 +6,13 @@
 
     <item
         android:id="@+id/share"
-        android:orderInCategory="100"
+        android:orderInCategory="200"
         android:title="Share"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/register"
+        android:orderInCategory="100"
+        android:title="Register"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="ifRoom" />
 </menu>

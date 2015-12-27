@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
-
-import com.melnykov.fab.FloatingActionButton;
 import com.todddavies.components.progressbar.ProgressWheel;
 
 /**
@@ -22,7 +20,6 @@ import com.todddavies.components.progressbar.ProgressWheel;
 //The first fragment whcih will be displayed to the user.
 public class HomeFragment extends Fragment {
 
-    FloatingActionButton fab;
     private ProgressWheel mDaysWheel;
     private ProgressWheel mHoursWheel;
     private ProgressWheel mMinutesWheel;
@@ -31,8 +28,8 @@ public class HomeFragment extends Fragment {
     int hour = 01;
     int minute = 01;
     int second = 01;
-    int monthDay = 18;
-    int month = 2;
+    int monthDay = 8;
+    int month = 9;
     int year = 2015;
     private int mDisplayDays;
     private int mDisplayHours;
@@ -53,16 +50,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.fragment_home, container, false);
         ((Welcome) getActivity()).setActionbarTitle("Home");
-
-       //Start the register activity when the user clicks the fab
-        fab = (FloatingActionButton) rootview.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), Register.class));
-
-            }
-        });
 
 
         mDaysWheel = (ProgressWheel) rootview.findViewById(R.id.activity_countdown_timer_days);
@@ -135,5 +122,9 @@ public class HomeFragment extends Fragment {
         }.start();
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((Welcome) getActivity()).setActionbarTitle("Home");
+    }
 }

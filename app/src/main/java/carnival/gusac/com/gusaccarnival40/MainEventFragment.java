@@ -24,7 +24,7 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
         // Required empty public constructor
     }
 
-
+    String title;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -34,26 +34,37 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
         type = args.getString("type");
         assert type != null;
         switch (type) {
+            case "home":
+                ((Welcome) getActivity()).setActionbarTitle("Events");
+                title="Events";
+                break;
             case "events":
                 ((Welcome) getActivity()).setActionbarTitle("Events");
+                title="Events";
                 break;
             case "workshops":
                 ((Welcome) getActivity()).setActionbarTitle("Workshops");
+                title="Workshops";
                 break;
             case "sponsors":
                 ((Welcome) getActivity()).setActionbarTitle("Sponsors");
+                title="Sponsors";
                 break;
             case "pronite":
                 ((Welcome) getActivity()).setActionbarTitle("Cultural Events");
+                title="Cultural Events";
                 break;
             case "litfest":
                 ((Welcome) getActivity()).setActionbarTitle("Literary Festival");
+                title="Literary Festival";
                 break;
             case "filmfest":
                 ((Welcome) getActivity()).setActionbarTitle("Film Festival");
+                title="Film Festival";
                 break;
             case "guestlc":
                 ((Welcome) getActivity()).setActionbarTitle("Guest Lectures");
+                title="Guest Lectures";
                 break;
 
         }
@@ -66,6 +77,11 @@ public class MainEventFragment extends Fragment implements AdapterView.OnItemCli
         return rootView;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        ((Welcome)getActivity()).setActionbarTitle(title);
+    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -28,14 +28,13 @@ public final class ServerUtilities {
     private static final int MAX_ATTEMPTS = 5;
     private static final int BACKOFF_MILLI_SECONDS = 2000;
     private static final Random random = new Random();
-    private static SharedPreferences settings;
 
     /**
      * Register this account/device pair within the server.
      */
     static void register(final Context context, String name, String email, final String regId, String phone) {
 
-        settings = context.getSharedPreferences("registerPrefs", Context.MODE_PRIVATE);
+        SharedPreferences settings = context.getSharedPreferences("registerPrefs", Context.MODE_PRIVATE);
         Log.i(TAG, "registering device (regId = " + regId + ")");
         String serverUrl = SERVER_URL;
         Map<String, String> params = new HashMap<String, String>();
@@ -51,8 +50,6 @@ public final class ServerUtilities {
         for (int i = 1; i <= MAX_ATTEMPTS; i++) {
             Log.d(TAG, "Attempt #" + i + " to register");
             try {
-                displayMessage(context, context.getString(
-                        R.string.server_registering, i, MAX_ATTEMPTS));
                 post(serverUrl, params);
                 GCMRegistrar.setRegisteredOnServer(context, true);
                 String message = context.getString(R.string.server_registered);
@@ -88,11 +85,11 @@ public final class ServerUtilities {
         GCMUtils.displayMessage(context, message);
     }
 
-    /**
+    /*
      * Unregister this account/device pair within the server.
      */
     static void unregister(final Context context, final String regId) {
-        Log.i(TAG, "unregistering device (regId = " + regId + ")");
+        Log.i(TAG, "unregistering device (re*gId = " + regId + ")");
         String serverUrl = SERVER_URL + "/unregister";
         Map<String, String> params = new HashMap<String, String>();
         params.put("regId", regId);

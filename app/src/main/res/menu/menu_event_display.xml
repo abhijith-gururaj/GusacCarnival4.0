@@ -4,7 +4,13 @@
     tools:context="carnival.gusac.com.gusaccarnival40.EventDisplay">
     <item
         android:id="@+id/share_event"
-        android:orderInCategory="100"
+        android:orderInCategory="200"
         android:title="Share"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_register"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_add"
+        android:title="Register"
+        app:showAsAction="ifRoom" />
 </menu>

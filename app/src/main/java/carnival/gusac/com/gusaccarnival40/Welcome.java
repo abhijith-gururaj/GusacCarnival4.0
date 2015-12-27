@@ -1,7 +1,5 @@
 package carnival.gusac.com.gusaccarnival40;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +15,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,21 +25,21 @@ import android.widget.Toast;
 import com.google.android.gcm.GCMRegistrar;
 
 import java.util.HashMap;
-import java.util.regex.Pattern;
-
-import static carnival.gusac.com.gusaccarnival40.GCMUtils.DISPLAY_MESSAGE_ACTION;
-import static carnival.gusac.com.gusaccarnival40.GCMUtils.EXTRA_MESSAGE;
-import static carnival.gusac.com.gusaccarnival40.GCMUtils.SENDER_ID;
 
 import carnival.gusac.com.gusaccarnival40.utils.AlertDialogManager;
 import carnival.gusac.com.gusaccarnival40.utils.ConnectionDetector;
 import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
 
+import static carnival.gusac.com.gusaccarnival40.GCMUtils.DISPLAY_MESSAGE_ACTION;
+import static carnival.gusac.com.gusaccarnival40.GCMUtils.EXTRA_MESSAGE;
+import static carnival.gusac.com.gusaccarnival40.GCMUtils.SENDER_ID;
+
 
 public class Welcome extends AppCompatActivity
 
 {
-    final static String HASHTAG = "Be sure to attend Gusac Carnival 4.0 #GC4";
+    final static String HASHTAG = "Be sure to attend Gusac Carnival 2015. Venue: Gitam University." +
+            "Download the app : https://play.google.com/store/apps/details?id=carnival.gusac.com.gusaccarnival40&hl=en";
     public static String name;
     public static String email;
     public static String phone;
@@ -167,8 +164,10 @@ public class Welcome extends AppCompatActivity
             editor.putString("email", email);
             editor.apply();
         } else {
-            name = settings.getString("name", "Welcome");
-            email = settings.getString("email", getEmail());
+            DatabaseHandler db=new DatabaseHandler(this);
+            HashMap<String,String> hashMap = db.getUserDetails();
+            name = hashMap.get("user_name");
+            email = hashMap.get("user_email");
         }
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
@@ -206,6 +205,7 @@ public class Welcome extends AppCompatActivity
                     //Replacing the main content with ContentFragment Which is our Inbox View;
                     case R.id.drawer_home:
                         mFragment = new HomeFragment();
+                        args.putString("type", "Home");
                         mTag = "Home";
                         fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                         fm.beginTransaction().replace(R.id.container, mFragment, mTag).commit();
@@ -240,10 +240,17 @@ public class Welcome extends AppCompatActivity
 
                     case R.id.drawer_filmfest:
                         args.putString("type", "filmfest");
-                        mFragment = new filmfest();
+                        mFragment = new MainEventFragment();
                         mFragment.setArguments(args);
                         mTag = "filmfest";
                         Toast.makeText(getApplicationContext(), "Please wait. Loading website", Toast.LENGTH_LONG).show();
+                        break;
+
+                    case R.id.drawer_workshops:
+                        args.putString("type","workshops");
+                        mFragment=new MainEventFragment();
+                        mFragment.setArguments(args);
+                        mTag="workshops";
                         break;
 
                     case R.id.drawer_sponsors:
@@ -272,7 +279,6 @@ public class Welcome extends AppCompatActivity
                         return true;
 
                 }
-
                 if (mFragment != null) {
                     if (!mTag.equals("Home")) {
                         fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
@@ -306,10 +312,13 @@ public class Welcome extends AppCompatActivity
         //calling sync state is necessary or else your hamburger icon wont show up
         actionBarDrawerToggle.syncState();
 
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new HomeFragment())
-                .addToBackStack("Home")
-                .commit();
+        Boolean notifClicked=getIntent().getBooleanExtra("notifClicked", false);
+        Log.d("NotifClicked?", String.valueOf(notifClicked));
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new HomeFragment())
+                    .addToBackStack("Home")
+                    .commit();
+
     }
 
     @Override
@@ -334,6 +343,10 @@ public class Welcome extends AppCompatActivity
             startActivity(sendIntent);
         }
 
+        if(id==R.id.register){
+            Intent intent=new Intent(this,Register.class);
+            startActivity(intent);
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -348,17 +361,5 @@ public class Welcome extends AppCompatActivity
         Fragment map = new MapFragment();
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.container, map, mapTag).commit();
-    }
-
-    public String getEmail() {
-        String possibleEmail = "null";
-        Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-        Account[] accounts = AccountManager.get(this).getAccountsByType("com.google");
-        for (Account account : accounts) {
-            if (emailPattern.matcher(account.name).matches())
-                possibleEmail = account.name;
-
-        }
-        return possibleEmail;
     }
 }

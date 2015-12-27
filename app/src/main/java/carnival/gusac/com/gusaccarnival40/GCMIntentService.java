@@ -6,12 +6,17 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+
 import com.google.android.gcm.GCMBaseIntentService;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Objects;
+
 import carnival.gusac.com.gusaccarnival40.utils.DatabaseHandler;
+
 import static carnival.gusac.com.gusaccarnival40.GCMUtils.SENDER_ID;
 import static carnival.gusac.com.gusaccarnival40.GCMUtils.displayMessage;
 
@@ -36,6 +41,7 @@ public class GCMIntentService extends GCMBaseIntentService {
         // set intent so it does not start a new activity
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
                 Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        notificationIntent.putExtra("notifClicked", true);
         PendingIntent intent =
                 PendingIntent.getActivity(context, 0, notificationIntent, 0);
         notification.setLatestEventInfo(context, title, message, intent);
@@ -51,10 +57,7 @@ public class GCMIntentService extends GCMBaseIntentService {
 
     @Override
     protected void onRegistered(Context context, String registrationId) {
-        Log.i(TAG, "Device registered: regId = " + registrationId);
-        displayMessage(context, "Your device registred with GCM");
-        Log.d("NAME", Welcome.name);
-        Log.d("IntentService", "Registering in server");
+
         ServerUtilities.register(context, Welcome.name, Welcome.email, registrationId, Welcome.phone);
     }
 
@@ -79,19 +82,19 @@ public class GCMIntentService extends GCMBaseIntentService {
         String type = "";
         try {
             JSONObject json = new JSONObject(data);
-            String isRegistered=json.getString("isRegistered");
-            if(isRegistered!=null) {
-                Log.d(TAG,"Server registration: "+isRegistered);
-                Boolean containsPrevEvents=json.getBoolean("containsPrevEvents");
-                Boolean containsPrevFeed=json.getBoolean("containsPrevFeed");
-                Log.d(TAG,"ContainsPrevEvents: "+containsPrevEvents);
-                Log.d(TAG,"ContainsPrevFeed: "+containsPrevFeed);
+            type = json.getString("type");
+            if (type.equals("register")) {
+                Log.d(TAG, "Server registration: " + type);
+                Boolean containsPrevEvents = json.getBoolean("containsPrevEvents");
+                Boolean containsPrevFeed = json.getBoolean("containsPrevFeed");
+                Log.d(TAG, "ContainsPrevEvents: " + containsPrevEvents);
+                Log.d(TAG, "ContainsPrevFeed: " + containsPrevFeed);
 
-                if(containsPrevEvents) {
-                    JSONArray prevEvents=json.getJSONArray("prevEvents");
+                if (containsPrevEvents) {
+                    JSONArray prevEvents = json.getJSONArray("prevEvents");
                     for (int i = 0; i < prevEvents.length(); i++) {
-                        JSONObject jobj=prevEvents.getJSONObject(i);
-                        String mode=jobj.getString("mode");
+                        JSONObject jobj = prevEvents.getJSONObject(i);
+                        String mode = jobj.getString("mode");
                         eventCategory = jobj.getString("event_category");
                         eventName = jobj.getString("event_name");
                         problemStatement = jobj.getString("problem_statement");
@@ -101,26 +104,24 @@ public class GCMIntentService extends GCMBaseIntentService {
                         rules = jobj.getString("event_rules");
                         organizers = jobj.getString("event_organizers");
 
-                        Log.d(TAG,"Performing: "+mode+" : "+eventCategory+" : "+ eventName);
+                        Log.d(TAG, "Performing: " + mode + " : " + eventCategory + " : " + eventName);
 
-                        performUpdateDB(db,mode,eventCategory,eventName,shortDesc,longDesc,
-                                problemStatement,rules,criteria,organizers);
+                        performUpdateDB(db, mode, eventCategory, eventName, shortDesc, longDesc,
+                                problemStatement, rules, criteria, organizers);
                     }
                 }
 
-                if(containsPrevFeed){
-                    JSONArray prevFeed=json.getJSONArray("prevFeed");
-                    for(int i=0;i < prevFeed.length();i++) {
-                        JSONObject jobj=prevFeed.getJSONObject(i);
-                        String message=jobj.getString("message");
-                        String timestamp=jobj.getString("timestamp");
+                if (containsPrevFeed) {
+                    JSONArray prevFeed = json.getJSONArray("prevFeed");
+                    for (int i = 0; i < prevFeed.length(); i++) {
+                        JSONObject jobj = prevFeed.getJSONObject(i);
+                        String message = jobj.getString("message");
+                        String timestamp = jobj.getString("timestamp");
                         generateNotification(context, message);
-                        db.addFeedUpdate(message,timestamp);
+                        db.addFeedUpdate(message, timestamp);
                     }
                 }
-            }
-            else {
-                type = json.getString("type");
+            } else {
                 Log.d(TAG, "type: " + type);
 
                 JSONObject jsonData = json.getJSONObject("0");
@@ -145,8 +146,8 @@ public class GCMIntentService extends GCMBaseIntentService {
                     rules = jsonData.getString("rules");
                     organizers = jsonData.getString("organizers");
 
-                    performUpdateDB(db,type,eventCategory,eventName,shortDesc,longDesc,
-                            problemStatement,rules,criteria,organizers);
+                    performUpdateDB(db, type, eventCategory, eventName, shortDesc, longDesc,
+                            problemStatement, rules, criteria, organizers);
                 }
             }
         } catch (JSONException e) {
@@ -154,9 +155,9 @@ public class GCMIntentService extends GCMBaseIntentService {
         }
     }
 
-    public void performUpdateDB(DatabaseHandler db,String type,String eventCategory,String eventName,
-                                String shortDesc,String longDesc,String problemStatement,
-                                String rules,String criteria,String organizers){
+    public void performUpdateDB(DatabaseHandler db, String type, String eventCategory, String eventName,
+                                String shortDesc, String longDesc, String problemStatement,
+                                String rules, String criteria, String organizers) {
 
 
         switch (type) {
